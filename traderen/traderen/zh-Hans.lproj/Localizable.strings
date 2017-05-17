@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  traderen
+
+  Created by 陈伟杰 on 2017/4/18.
+  Copyright © 2017年 陈伟杰. All rights reserved.
+*/
+"收件箱" = "SJX";
+"已发送邮件" = "YSC";
+"草稿箱" = "CGX";
+"已删除邮件" = "YSC";
+"垃圾箱" = "LJX";
+"所有邮件" = "ALL";
+"置顶邮件" = "TOP";
+"红旗邮件" = "FLA";
+"星标邮件" = "STA";
+"内部邮件" = "NB";
+"询盘邮件" = "INQ";
+"已分配询盘" = "YFP";
+"待跟踪" = "DGZ";
+"已提醒" = "YTX";
+"全部邮件" = "ALL";
+"智能标签" = "ZNBQ";

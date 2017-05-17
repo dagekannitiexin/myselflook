@@ -1,0 +1,123 @@
+
+/* Class = "UILabel"; text = "版权所有:宁波亿迈软件有限公司"; ObjectID = "0nA-1D-Jx5"; */
+"0nA-1D-Jx5.text" = "版权所有:宁波亿迈软件有限公司";
+
+/* Class = "UILabel"; text = "2017/04/"; ObjectID = "1Ly-AZ-TIu"; */
+"1Ly-AZ-TIu.text" = "2017/04/";
+
+/* Class = "UITextField"; placeholder = "密码"; ObjectID = "4eh-dm-woj"; */
+"4eh-dm-woj.placeholder" = "密码";
+
+/* Class = "UILabel"; text = "星期六"; ObjectID = "5AP-AO-fVy"; */
+"5AP-AO-fVy.text" = "星期六";
+
+/* Class = "UILabel"; text = "报价"; ObjectID = "5ik-SL-nM8"; */
+"5ik-SL-nM8.text" = "报价";
+
+/* Class = "UILabel"; text = "搜索"; ObjectID = "69R-8E-DPa"; */
+"69R-8E-DPa.text" = "搜索";
+
+/* Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "6ds-vc-AwU"; */
+"6ds-vc-AwU.title" = "Root View Controller";
+
+/* Class = "UILabel"; text = "90+"; ObjectID = "7uB-zm-SNp"; */
+"7uB-zm-SNp.text" = "90+";
+
+/* Class = "UILabel"; text = "写邮件"; ObjectID = "8Jb-fx-YRF"; */
+"8Jb-fx-YRF.text" = "写邮件";
+
+/* Class = "UIButton"; normalTitle = " 设置"; ObjectID = "9Au-eC-JwW"; */
+"9Au-eC-JwW.normalTitle" = " 设置";
+
+/* Class = "UILabel"; text = "智能文件夹"; ObjectID = "BUy-DA-EU1"; */
+"BUy-DA-EU1.text" = "智能文件夹";
+
+/* Class = "UILabel"; text = "NINGBO BEAMMAX LI..."; ObjectID = "C0A-Xp-3Br"; */
+"C0A-Xp-3Br.text" = "NINGBO BEAMMAX LI...";
+
+/* Class = "UILabel"; text = "客户管理"; ObjectID = "CRx-cy-ZH2"; */
+"CRx-cy-ZH2.text" = "客户管理";
+
+/* Class = "UILabel"; text = "所有邮件"; ObjectID = "ECb-cT-JLS"; */
+"ECb-cT-JLS.text" = "所有邮件";
+
+/* Class = "UILabel"; text = "工作动态"; ObjectID = "Fwf-vo-JtF"; */
+"Fwf-vo-JtF.text" = "工作动态";
+
+/* Class = "UITextField"; placeholder = "账号"; ObjectID = "GRl-wd-LnU"; */
+"GRl-wd-LnU.placeholder" = "账号";
+
+/* Class = "UIButton"; normalTitle = "登 录"; ObjectID = "H9J-n5-8kA"; */
+"H9J-n5-8kA.normalTitle" = "登 录";
+
+/* Class = "UILabel"; text = "工作日报"; ObjectID = "IDp-vK-C0a"; */
+"IDp-vK-C0a.text" = "工作日报";
+
+/* Class = "UITabBarItem"; title = "我的"; ObjectID = "IuN-No-9iI"; */
+"IuN-No-9iI.title" = "我的";
+
+/* Class = "UITabBarItem"; title = "工作台"; ObjectID = "JOy-Tq-qDu"; */
+"JOy-Tq-qDu.title" = "工作台";
+
+/* Class = "UITabBarItem"; title = "通讯录"; ObjectID = "Kby-wa-6As"; */
+"Kby-wa-6As.title" = "通讯录";
+
+/* Class = "UILabel"; text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"; ObjectID = "OSs-wq-Nd7"; */
+"OSs-wq-Nd7.text" = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+
+/* Class = "UIButton"; normalTitle = "删除"; ObjectID = "SzY-Os-pYg"; */
+"SzY-Os-pYg.normalTitle" = "删除";
+
+/* Class = "UILabel"; text = "努力工作"; ObjectID = "T1a-Ls-81D"; */
+"T1a-Ls-81D.text" = "努力工作";
+
+/* Class = "UILabel"; text = "90+"; ObjectID = "TFm-9I-NvZ"; */
+"TFm-9I-NvZ.text" = "90+";
+
+/* Class = "UINavigationItem"; title = "工作平台"; ObjectID = "TeP-G9-LTt"; */
+"TeP-G9-LTt.title" = "工作平台";
+
+/* Class = "UILabel"; text = "星期六"; ObjectID = "ZAX-s6-Lee"; */
+"ZAX-s6-Lee.text" = "星期六";
+
+/* Class = "UILabel"; text = "19"; ObjectID = "Zkt-jB-Tmf"; */
+"Zkt-jB-Tmf.text" = "19";
+
+/* Class = "UILabel"; text = "90+"; ObjectID = "cPq-g9-YMy"; */
+"cPq-g9-YMy.text" = "90+";
+
+/* Class = "UILabel"; text = "工作平台"; ObjectID = "cxh-EL-bx1"; */
+"cxh-EL-bx1.text" = "工作平台";
+
+/* Class = "UIButton"; normalTitle = "移动"; ObjectID = "fF8-yI-yut"; */
+"fF8-yI-yut.normalTitle" = "移动";
+
+/* Class = "UILabel"; text = "邮件管理"; ObjectID = "gY3-bm-y73"; */
+"gY3-bm-y73.text" = "邮件管理";
+
+/* Class = "UIButton"; normalTitle = "未读"; ObjectID = "grw-62-GzJ"; */
+"grw-62-GzJ.normalTitle" = "未读";
+
+/* Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "lbc-zc-sOF"; */
+"lbc-zc-sOF.title" = "Root View Controller";
+
+/* Class = "UILabel"; text = "是为了更好的生活"; ObjectID = "lz3-2u-Nnd"; */
+"lz3-2u-Nnd.text" = "是为了更好的生活";
+
+/* Class = "UIButton"; normalTitle = " 记住密码信息"; ObjectID = "mKg-yt-97s"; */
+"mKg-yt-97s.normalTitle" = " 记住密码信息";
+
+/* Class = "UITabBarItem"; title = "会话"; ObjectID = "oTw-dN-NJl"; */
+"oTw-dN-NJl.title" = "会话";
+
+/* Class = "UIButton"; normalTitle = "已读"; ObjectID = "onT-DL-b2f"; */
+"onT-DL-b2f.normalTitle" = "已读";
+
+/* Class = "UILabel"; text = "批量操作"; ObjectID = "sp6-Gf-BQy"; */
+"sp6-Gf-BQy.text" = "批量操作";
+
+/* Class = "UILabel"; text = "90+"; ObjectID = "w20-yu-uHT"; */
+"w20-yu-uHT.text" = "90+";
+
+/* Class = "UILabel"; text = "建文件夹"; ObjectID = "y8b-Tu-aJT"; */
+"y8b-Tu-aJT.text" = "建文件夹";

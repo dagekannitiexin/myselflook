@@ -1,0 +1,1366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A300B97907CF910FE9C20958 /* libPods-traderen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 569088E280B4D3668BB124DB /* libPods-traderen.a */; };
+		DF4AA1871EB3218400C144A4 /* MailDetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA1861EB3218400C144A4 /* MailDetailCollectionViewCell.m */; };
+		DF4AA18C1EB8526A00C144A4 /* MailAttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA18B1EB8526A00C144A4 /* MailAttachmentViewController.m */; };
+		DF4AA18F1EB870EE00C144A4 /* HTTPInterface+Attachment.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA18E1EB870EE00C144A4 /* HTTPInterface+Attachment.m */; };
+		DF4AA1921EB87DA800C144A4 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA1911EB87DA800C144A4 /* NSString+Base64.m */; };
+		DF4AA19A1EB9C4A200C144A4 /* MailFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA1991EB9C4A200C144A4 /* MailFolderViewController.m */; };
+		DF4AA19D1EBAD53E00C144A4 /* MailFolderChildArrayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA19C1EBAD53E00C144A4 /* MailFolderChildArrayTableViewCell.m */; };
+		DF4AA1E01EC0925D00C144A4 /* UITableViewCell+JZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA1D21EC0925D00C144A4 /* UITableViewCell+JZExtension.m */; };
+		DF4AA1E11EC0925D00C144A4 /* UITableViewRowAction+JZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA1D41EC0925D00C144A4 /* UITableViewRowAction+JZExtension.m */; };
+		DF4AA1E21EC0925D00C144A4 /* UITableViewRowAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA1D51EC0925D00C144A4 /* UITableViewRowAction.m */; };
+		DF4AA1E31EC0925D00C144A4 /* KGModal.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA1D81EC0925D00C144A4 /* KGModal.m */; };
+		DF4AA1E41EC0925D00C144A4 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA1DB1EC0925D00C144A4 /* RECommonFunctions.m */; };
+		DF4AA1E51EC0925D00C144A4 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA1DD1EC0925D00C144A4 /* RESideMenu.m */; };
+		DF4AA1E61EC0925D00C144A4 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA1DF1EC0925D00C144A4 /* UIViewController+RESideMenu.m */; };
+		DF4AA3D81EC2EFB900C144A4 /* MailSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA3D71EC2EFB900C144A4 /* MailSendViewController.m */; };
+		DF4AA3DB1EC3427200C144A4 /* HTTPInterface+MailSend.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA3DA1EC3427200C144A4 /* HTTPInterface+MailSend.m */; };
+		DF4AA3DE1EC548C500C144A4 /* MailAttachmentInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA3DD1EC548C500C144A4 /* MailAttachmentInfoModel.m */; };
+		DF4AA3E21EC5551900C144A4 /* UploadAttachmentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA3E11EC5551900C144A4 /* UploadAttachmentCollectionViewCell.m */; };
+		DF4AA3E51EC55D2600C144A4 /* UIImage+ImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA3E41EC55D2600C144A4 /* UIImage+ImageSize.m */; };
+		DF4AA3E81EC5A37C00C144A4 /* MailImageAttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA3E71EC5A37C00C144A4 /* MailImageAttachmentViewController.m */; };
+		DF4AA3EB1EC5A69200C144A4 /* MailDocAttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA3EA1EC5A69200C144A4 /* MailDocAttachmentViewController.m */; };
+		DF922DED1E9B13170060BA4D /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = DF922DEC1E9B13170060BA4D /* NSString+MD5.m */; };
+		DFCA02B91E9B59C70073E9C9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02B81E9B59C70073E9C9 /* UIView+Extension.m */; };
+		DFCA02BC1E9B6E5C0073E9C9 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02BB1E9B6E5C0073E9C9 /* MoreViewController.m */; };
+		DFCA02C01E9B7A500073E9C9 /* MoreCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02BF1E9B7A500073E9C9 /* MoreCollectionViewCell.m */; };
+		DFCA02C41E9B82CF0073E9C9 /* MailHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02C31E9B82CF0073E9C9 /* MailHomeViewController.m */; };
+		DFCA02C81E9C9D4F0073E9C9 /* SmartFolderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02C71E9C9D4F0073E9C9 /* SmartFolderTableViewCell.m */; };
+		DFCA02CB1E9C9FD00073E9C9 /* HTTPInterface+MailBox.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02CA1E9C9FD00073E9C9 /* HTTPInterface+MailBox.m */; };
+		DFCA02D31E9CA8A10073E9C9 /* UserMailBoxListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02D21E9CA8A10073E9C9 /* UserMailBoxListCell.m */; };
+		DFCA02D61E9CB7F20073E9C9 /* UserMailBoxList.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02D51E9CB7F20073E9C9 /* UserMailBoxList.m */; };
+		DFCA02DC1E9CBFC60073E9C9 /* UserSmartMailBoxChildList.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02DB1E9CBFC60073E9C9 /* UserSmartMailBoxChildList.m */; };
+		DFCA02DF1E9E01A80073E9C9 /* UserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02DE1E9E01A80073E9C9 /* UserInfoManager.m */; };
+		DFCA02E51E9E1B1E0073E9C9 /* UserSmartMailBoxChildListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02E41E9E1B1D0073E9C9 /* UserSmartMailBoxChildListCell.m */; };
+		DFCA02EB1E9F6DA80073E9C9 /* MailHomeDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02EA1E9F6DA80073E9C9 /* MailHomeDrawerViewController.m */; };
+		DFCA02EE1EA063890073E9C9 /* MailHomeCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02ED1EA063890073E9C9 /* MailHomeCenterViewController.m */; };
+		DFCA02F31EA1CD040073E9C9 /* MailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02F21EA1CD040073E9C9 /* MailTableViewCell.m */; };
+		DFCA02F61EA1E8410073E9C9 /* MailTagCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02F51EA1E8410073E9C9 /* MailTagCollectionViewCell.m */; };
+		DFCA02F91EA21B560073E9C9 /* MailTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02F81EA21B560073E9C9 /* MailTagCollectionView.m */; };
+		DFCA03001EA4493A0073E9C9 /* MailHomeMailList.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA02FF1EA4493A0073E9C9 /* MailHomeMailList.m */; };
+		DFCA03031EA449CF0073E9C9 /* MailHomeMailListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA03021EA449CF0073E9C9 /* MailHomeMailListCell.m */; };
+		DFCA03061EA4A2A50073E9C9 /* NSString+CreateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA03051EA4A2A50073E9C9 /* NSString+CreateTime.m */; };
+		DFCA03091EA4B7DE0073E9C9 /* NSString+MailLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA03081EA4B7DE0073E9C9 /* NSString+MailLabel.m */; };
+		DFCA03141EA5BEA90073E9C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFCA03161EA5BEA90073E9C9 /* Localizable.strings */; };
+		DFCA03211EA7072C0073E9C9 /* MailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA03201EA7072C0073E9C9 /* MailTableView.m */; };
+		DFCA03271EAA09360073E9C9 /* HTTPInterface+Folder.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA03261EAA09360073E9C9 /* HTTPInterface+Folder.m */; };
+		DFCA032B1EAB1EEB0073E9C9 /* MailFolderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA032A1EAB1EEA0073E9C9 /* MailFolderCell.m */; };
+		DFCA032E1EAB2B570073E9C9 /* MailMoveFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA032D1EAB2B570073E9C9 /* MailMoveFolderViewController.m */; };
+		DFCA03321EAB336F0073E9C9 /* MailFolderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA03311EAB336F0073E9C9 /* MailFolderTableViewCell.m */; };
+		DFCA033A1EAD98040073E9C9 /* MailDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA03391EAD98040073E9C9 /* MailDetailViewController.m */; };
+		DFCA03411EADEC130073E9C9 /* MailDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA03401EADEC130073E9C9 /* MailDetailModel.m */; };
+		DFCA03441EAE0F910073E9C9 /* MailDetailFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA03431EAE0F910073E9C9 /* MailDetailFileModel.m */; };
+		DFCA03481EAEEFFF0073E9C9 /* TagLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA03471EAEEFFF0073E9C9 /* TagLabel.m */; };
+		DFCA034B1EAEF3060073E9C9 /* TagLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA034A1EAEF3060073E9C9 /* TagLabelView.m */; };
+		DFCD65CE1E97189A0006C0D0 /* UserMailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCD65CD1E97189A0006C0D0 /* UserMailLabelCell.m */; };
+		DFCD65D21E9723C40006C0D0 /* MBProgressHUD+XQ.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCD65D11E9723C40006C0D0 /* MBProgressHUD+XQ.m */; };
+		DFCD65D51E9739650006C0D0 /* UserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCD65D41E9739650006C0D0 /* UserDefaultsManager.m */; };
+		DFCD65DC1E9787800006C0D0 /* WorkBenchCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCD65DB1E9787800006C0D0 /* WorkBenchCollectionViewCell.m */; };
+		DFF1F3241EAF20100075EDAB /* RecipientLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF1F3231EAF20100075EDAB /* RecipientLabelView.m */; };
+		DFF69B011E952D860009BAD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B001E952D860009BAD7 /* main.m */; };
+		DFF69B041E952D860009BAD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B031E952D860009BAD7 /* AppDelegate.m */; };
+		DFF69B0A1E952D860009BAD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFF69B081E952D860009BAD7 /* Main.storyboard */; };
+		DFF69B0C1E952D860009BAD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF69B0B1E952D860009BAD7 /* Assets.xcassets */; };
+		DFF69B0F1E952D860009BAD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFF69B0D1E952D860009BAD7 /* LaunchScreen.storyboard */; };
+		DFF69B1A1E952D860009BAD7 /* traderenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B191E952D860009BAD7 /* traderenTests.m */; };
+		DFF69B251E952D860009BAD7 /* traderenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B241E952D860009BAD7 /* traderenUITests.m */; };
+		DFF69B4A1E95E4040009BAD7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B491E95E4040009BAD7 /* LoginViewController.m */; };
+		DFF69B4D1E95E4140009BAD7 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B4C1E95E4140009BAD7 /* TabBarViewController.m */; };
+		DFF69B511E95F11D0009BAD7 /* HTTPInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B501E95F11D0009BAD7 /* HTTPInterface.m */; };
+		DFF69B541E9612B70009BAD7 /* HTTPInterface+Mail.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B531E9612B70009BAD7 /* HTTPInterface+Mail.m */; };
+		DFF69B581E961ED00009BAD7 /* UserLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B571E961ED00009BAD7 /* UserLoginModel.m */; };
+		DFF69B5D1E962F5B0009BAD7 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B5C1E962F5B0009BAD7 /* CustomTabBar.m */; };
+		DFF69B611E96727B0009BAD7 /* WorkBenchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B601E96727B0009BAD7 /* WorkBenchViewController.m */; };
+		DFF69B641E9678710009BAD7 /* MenuListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B631E9678710009BAD7 /* MenuListCell.m */; };
+		DFF69B671E967CD40009BAD7 /* MenuList.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B661E967CD40009BAD7 /* MenuList.m */; };
+		DFF69B6A1E968CFD0009BAD7 /* MenuListSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B691E968CFD0009BAD7 /* MenuListSubCell.m */; };
+		DFF69B6D1E9694DB0009BAD7 /* MenuListSecondSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF69B6C1E9694DB0009BAD7 /* MenuListSecondSubCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFF69B161E952D860009BAD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF69AF41E952D860009BAD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFF69AFB1E952D860009BAD7;
+			remoteInfo = traderen;
+		};
+		DFF69B211E952D860009BAD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF69AF41E952D860009BAD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFF69AFB1E952D860009BAD7;
+			remoteInfo = traderen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EC52A3D688C80E11E08B9DD /* Pods-traderen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traderen.release.xcconfig"; path = "Pods/Target Support Files/Pods-traderen/Pods-traderen.release.xcconfig"; sourceTree = "<group>"; };
+		569088E280B4D3668BB124DB /* libPods-traderen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-traderen.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A86AC69DAE5DE4360DDB929A /* Pods-traderen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traderen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-traderen/Pods-traderen.debug.xcconfig"; sourceTree = "<group>"; };
+		DF4AA1851EB3218400C144A4 /* MailDetailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailDetailCollectionViewCell.h; sourceTree = "<group>"; };
+		DF4AA1861EB3218400C144A4 /* MailDetailCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailDetailCollectionViewCell.m; sourceTree = "<group>"; };
+		DF4AA18A1EB8526A00C144A4 /* MailAttachmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailAttachmentViewController.h; sourceTree = "<group>"; };
+		DF4AA18B1EB8526A00C144A4 /* MailAttachmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailAttachmentViewController.m; sourceTree = "<group>"; };
+		DF4AA18D1EB870EE00C144A4 /* HTTPInterface+Attachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HTTPInterface+Attachment.h"; sourceTree = "<group>"; };
+		DF4AA18E1EB870EE00C144A4 /* HTTPInterface+Attachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HTTPInterface+Attachment.m"; sourceTree = "<group>"; };
+		DF4AA1901EB87DA800C144A4 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		DF4AA1911EB87DA800C144A4 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		DF4AA1951EB9845900C144A4 /* MailSendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailSendViewController.h; sourceTree = "<group>"; };
+		DF4AA1981EB9C4A200C144A4 /* MailFolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailFolderViewController.h; sourceTree = "<group>"; };
+		DF4AA1991EB9C4A200C144A4 /* MailFolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailFolderViewController.m; sourceTree = "<group>"; };
+		DF4AA19B1EBAD53E00C144A4 /* MailFolderChildArrayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailFolderChildArrayTableViewCell.h; sourceTree = "<group>"; };
+		DF4AA19C1EBAD53E00C144A4 /* MailFolderChildArrayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailFolderChildArrayTableViewCell.m; sourceTree = "<group>"; };
+		DF4AA1D21EC0925D00C144A4 /* UITableViewCell+JZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+JZExtension.m"; sourceTree = "<group>"; };
+		DF4AA1D31EC0925D00C144A4 /* UITableViewRowAction+JZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewRowAction+JZExtension.h"; sourceTree = "<group>"; };
+		DF4AA1D41EC0925D00C144A4 /* UITableViewRowAction+JZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewRowAction+JZExtension.m"; sourceTree = "<group>"; };
+		DF4AA1D51EC0925D00C144A4 /* UITableViewRowAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewRowAction.m; sourceTree = "<group>"; };
+		DF4AA1D71EC0925D00C144A4 /* KGModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGModal.h; sourceTree = "<group>"; };
+		DF4AA1D81EC0925D00C144A4 /* KGModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGModal.m; sourceTree = "<group>"; };
+		DF4AA1DA1EC0925D00C144A4 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		DF4AA1DB1EC0925D00C144A4 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		DF4AA1DC1EC0925D00C144A4 /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		DF4AA1DD1EC0925D00C144A4 /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		DF4AA1DE1EC0925D00C144A4 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		DF4AA1DF1EC0925D00C144A4 /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		DF4AA3D71EC2EFB900C144A4 /* MailSendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailSendViewController.m; sourceTree = "<group>"; };
+		DF4AA3D91EC3427200C144A4 /* HTTPInterface+MailSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HTTPInterface+MailSend.h"; sourceTree = "<group>"; };
+		DF4AA3DA1EC3427200C144A4 /* HTTPInterface+MailSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HTTPInterface+MailSend.m"; sourceTree = "<group>"; };
+		DF4AA3DC1EC548C500C144A4 /* MailAttachmentInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailAttachmentInfoModel.h; sourceTree = "<group>"; };
+		DF4AA3DD1EC548C500C144A4 /* MailAttachmentInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailAttachmentInfoModel.m; sourceTree = "<group>"; };
+		DF4AA3E01EC5551900C144A4 /* UploadAttachmentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadAttachmentCollectionViewCell.h; sourceTree = "<group>"; };
+		DF4AA3E11EC5551900C144A4 /* UploadAttachmentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadAttachmentCollectionViewCell.m; sourceTree = "<group>"; };
+		DF4AA3E31EC55D2600C144A4 /* UIImage+ImageSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageSize.h"; sourceTree = "<group>"; };
+		DF4AA3E41EC55D2600C144A4 /* UIImage+ImageSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageSize.m"; sourceTree = "<group>"; };
+		DF4AA3E61EC5A37C00C144A4 /* MailImageAttachmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailImageAttachmentViewController.h; sourceTree = "<group>"; };
+		DF4AA3E71EC5A37C00C144A4 /* MailImageAttachmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailImageAttachmentViewController.m; sourceTree = "<group>"; };
+		DF4AA3E91EC5A69200C144A4 /* MailDocAttachmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailDocAttachmentViewController.h; sourceTree = "<group>"; };
+		DF4AA3EA1EC5A69200C144A4 /* MailDocAttachmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailDocAttachmentViewController.m; sourceTree = "<group>"; };
+		DF922DEB1E9B13170060BA4D /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		DF922DEC1E9B13170060BA4D /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		DFCA02B71E9B59C70073E9C9 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		DFCA02B81E9B59C70073E9C9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		DFCA02BA1E9B6E5C0073E9C9 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		DFCA02BB1E9B6E5C0073E9C9 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		DFCA02BE1E9B7A500073E9C9 /* MoreCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCollectionViewCell.h; sourceTree = "<group>"; };
+		DFCA02BF1E9B7A500073E9C9 /* MoreCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCollectionViewCell.m; sourceTree = "<group>"; };
+		DFCA02C21E9B82CF0073E9C9 /* MailHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailHomeViewController.h; sourceTree = "<group>"; };
+		DFCA02C31E9B82CF0073E9C9 /* MailHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailHomeViewController.m; sourceTree = "<group>"; };
+		DFCA02C61E9C9D4F0073E9C9 /* SmartFolderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartFolderTableViewCell.h; sourceTree = "<group>"; };
+		DFCA02C71E9C9D4F0073E9C9 /* SmartFolderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartFolderTableViewCell.m; sourceTree = "<group>"; };
+		DFCA02C91E9C9FD00073E9C9 /* HTTPInterface+MailBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HTTPInterface+MailBox.h"; sourceTree = "<group>"; };
+		DFCA02CA1E9C9FD00073E9C9 /* HTTPInterface+MailBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HTTPInterface+MailBox.m"; sourceTree = "<group>"; };
+		DFCA02D11E9CA8A10073E9C9 /* UserMailBoxListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMailBoxListCell.h; sourceTree = "<group>"; };
+		DFCA02D21E9CA8A10073E9C9 /* UserMailBoxListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMailBoxListCell.m; sourceTree = "<group>"; };
+		DFCA02D41E9CB7F20073E9C9 /* UserMailBoxList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMailBoxList.h; sourceTree = "<group>"; };
+		DFCA02D51E9CB7F20073E9C9 /* UserMailBoxList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMailBoxList.m; sourceTree = "<group>"; };
+		DFCA02DA1E9CBFC60073E9C9 /* UserSmartMailBoxChildList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSmartMailBoxChildList.h; sourceTree = "<group>"; };
+		DFCA02DB1E9CBFC60073E9C9 /* UserSmartMailBoxChildList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSmartMailBoxChildList.m; sourceTree = "<group>"; };
+		DFCA02DD1E9E01A80073E9C9 /* UserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoManager.h; sourceTree = "<group>"; };
+		DFCA02DE1E9E01A80073E9C9 /* UserInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoManager.m; sourceTree = "<group>"; };
+		DFCA02E21E9E03D70073E9C9 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		DFCA02E31E9E1B1D0073E9C9 /* UserSmartMailBoxChildListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSmartMailBoxChildListCell.h; sourceTree = "<group>"; };
+		DFCA02E41E9E1B1D0073E9C9 /* UserSmartMailBoxChildListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSmartMailBoxChildListCell.m; sourceTree = "<group>"; };
+		DFCA02E91E9F6DA80073E9C9 /* MailHomeDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailHomeDrawerViewController.h; sourceTree = "<group>"; };
+		DFCA02EA1E9F6DA80073E9C9 /* MailHomeDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailHomeDrawerViewController.m; sourceTree = "<group>"; };
+		DFCA02EC1EA063890073E9C9 /* MailHomeCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailHomeCenterViewController.h; sourceTree = "<group>"; };
+		DFCA02ED1EA063890073E9C9 /* MailHomeCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailHomeCenterViewController.m; sourceTree = "<group>"; };
+		DFCA02F11EA1CD040073E9C9 /* MailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailTableViewCell.h; sourceTree = "<group>"; };
+		DFCA02F21EA1CD040073E9C9 /* MailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailTableViewCell.m; sourceTree = "<group>"; };
+		DFCA02F41EA1E8410073E9C9 /* MailTagCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailTagCollectionViewCell.h; sourceTree = "<group>"; };
+		DFCA02F51EA1E8410073E9C9 /* MailTagCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailTagCollectionViewCell.m; sourceTree = "<group>"; };
+		DFCA02F71EA21B560073E9C9 /* MailTagCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailTagCollectionView.h; sourceTree = "<group>"; };
+		DFCA02F81EA21B560073E9C9 /* MailTagCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailTagCollectionView.m; sourceTree = "<group>"; };
+		DFCA02FE1EA4493A0073E9C9 /* MailHomeMailList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailHomeMailList.h; sourceTree = "<group>"; };
+		DFCA02FF1EA4493A0073E9C9 /* MailHomeMailList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailHomeMailList.m; sourceTree = "<group>"; };
+		DFCA03011EA449CF0073E9C9 /* MailHomeMailListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailHomeMailListCell.h; sourceTree = "<group>"; };
+		DFCA03021EA449CF0073E9C9 /* MailHomeMailListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailHomeMailListCell.m; sourceTree = "<group>"; };
+		DFCA03041EA4A2A50073E9C9 /* NSString+CreateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CreateTime.h"; sourceTree = "<group>"; };
+		DFCA03051EA4A2A50073E9C9 /* NSString+CreateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CreateTime.m"; sourceTree = "<group>"; };
+		DFCA03071EA4B7DE0073E9C9 /* NSString+MailLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MailLabel.h"; sourceTree = "<group>"; };
+		DFCA03081EA4B7DE0073E9C9 /* NSString+MailLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MailLabel.m"; sourceTree = "<group>"; };
+		DFCA03101EA5BE390073E9C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		DFCA03111EA5BE390073E9C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		DFCA03151EA5BEA90073E9C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DFCA03171EA5C3280073E9C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DFCA031F1EA7072C0073E9C9 /* MailTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailTableView.h; sourceTree = "<group>"; };
+		DFCA03201EA7072C0073E9C9 /* MailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailTableView.m; sourceTree = "<group>"; };
+		DFCA03251EAA09360073E9C9 /* HTTPInterface+Folder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HTTPInterface+Folder.h"; sourceTree = "<group>"; };
+		DFCA03261EAA09360073E9C9 /* HTTPInterface+Folder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HTTPInterface+Folder.m"; sourceTree = "<group>"; };
+		DFCA03291EAB1EEA0073E9C9 /* MailFolderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailFolderCell.h; sourceTree = "<group>"; };
+		DFCA032A1EAB1EEA0073E9C9 /* MailFolderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailFolderCell.m; sourceTree = "<group>"; };
+		DFCA032C1EAB2B570073E9C9 /* MailMoveFolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailMoveFolderViewController.h; sourceTree = "<group>"; };
+		DFCA032D1EAB2B570073E9C9 /* MailMoveFolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailMoveFolderViewController.m; sourceTree = "<group>"; };
+		DFCA03301EAB336F0073E9C9 /* MailFolderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailFolderTableViewCell.h; sourceTree = "<group>"; };
+		DFCA03311EAB336F0073E9C9 /* MailFolderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailFolderTableViewCell.m; sourceTree = "<group>"; };
+		DFCA03361EAB73320073E9C9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DFCA03381EAD98040073E9C9 /* MailDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailDetailViewController.h; sourceTree = "<group>"; };
+		DFCA03391EAD98040073E9C9 /* MailDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailDetailViewController.m; sourceTree = "<group>"; };
+		DFCA033F1EADEC130073E9C9 /* MailDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailDetailModel.h; sourceTree = "<group>"; };
+		DFCA03401EADEC130073E9C9 /* MailDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailDetailModel.m; sourceTree = "<group>"; };
+		DFCA03421EAE0F910073E9C9 /* MailDetailFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailDetailFileModel.h; sourceTree = "<group>"; };
+		DFCA03431EAE0F910073E9C9 /* MailDetailFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailDetailFileModel.m; sourceTree = "<group>"; };
+		DFCA03461EAEEFFF0073E9C9 /* TagLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagLabel.h; sourceTree = "<group>"; };
+		DFCA03471EAEEFFF0073E9C9 /* TagLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagLabel.m; sourceTree = "<group>"; };
+		DFCA03491EAEF3060073E9C9 /* TagLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagLabelView.h; sourceTree = "<group>"; };
+		DFCA034A1EAEF3060073E9C9 /* TagLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagLabelView.m; sourceTree = "<group>"; };
+		DFCD65CC1E97189A0006C0D0 /* UserMailLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMailLabelCell.h; sourceTree = "<group>"; };
+		DFCD65CD1E97189A0006C0D0 /* UserMailLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMailLabelCell.m; sourceTree = "<group>"; };
+		DFCD65D01E9723C40006C0D0 /* MBProgressHUD+XQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XQ.h"; sourceTree = "<group>"; };
+		DFCD65D11E9723C40006C0D0 /* MBProgressHUD+XQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XQ.m"; sourceTree = "<group>"; };
+		DFCD65D31E9739650006C0D0 /* UserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultsManager.h; sourceTree = "<group>"; };
+		DFCD65D41E9739650006C0D0 /* UserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsManager.m; sourceTree = "<group>"; };
+		DFCD65DA1E9787800006C0D0 /* WorkBenchCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkBenchCollectionViewCell.h; sourceTree = "<group>"; };
+		DFCD65DB1E9787800006C0D0 /* WorkBenchCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkBenchCollectionViewCell.m; sourceTree = "<group>"; };
+		DFF1F3221EAF20100075EDAB /* RecipientLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipientLabelView.h; sourceTree = "<group>"; };
+		DFF1F3231EAF20100075EDAB /* RecipientLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipientLabelView.m; sourceTree = "<group>"; };
+		DFF69AFC1E952D860009BAD7 /* traderen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = traderen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF69B001E952D860009BAD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFF69B021E952D860009BAD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = traderen/AppDelegate/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		DFF69B031E952D860009BAD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = traderen/AppDelegate/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		DFF69B091E952D860009BAD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFF69B0B1E952D860009BAD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFF69B0E1E952D860009BAD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFF69B101E952D860009BAD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFF69B151E952D860009BAD7 /* traderenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = traderenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF69B191E952D860009BAD7 /* traderenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = traderenTests.m; sourceTree = "<group>"; };
+		DFF69B1B1E952D860009BAD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFF69B201E952D860009BAD7 /* traderenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = traderenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF69B241E952D860009BAD7 /* traderenUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = traderenUITests.m; sourceTree = "<group>"; };
+		DFF69B261E952D860009BAD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFF69B481E95E4040009BAD7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		DFF69B491E95E4040009BAD7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		DFF69B4B1E95E4140009BAD7 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarViewController.h; path = traderen/Main/Controller/TabBar/TabBarViewController.h; sourceTree = SOURCE_ROOT; };
+		DFF69B4C1E95E4140009BAD7 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarViewController.m; path = traderen/Main/Controller/TabBar/TabBarViewController.m; sourceTree = SOURCE_ROOT; };
+		DFF69B4F1E95F11D0009BAD7 /* HTTPInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPInterface.h; sourceTree = "<group>"; };
+		DFF69B501E95F11D0009BAD7 /* HTTPInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPInterface.m; sourceTree = "<group>"; };
+		DFF69B521E9612B70009BAD7 /* HTTPInterface+Mail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HTTPInterface+Mail.h"; sourceTree = "<group>"; };
+		DFF69B531E9612B70009BAD7 /* HTTPInterface+Mail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HTTPInterface+Mail.m"; sourceTree = "<group>"; };
+		DFF69B561E961ED00009BAD7 /* UserLoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginModel.h; sourceTree = "<group>"; };
+		DFF69B571E961ED00009BAD7 /* UserLoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginModel.m; sourceTree = "<group>"; };
+		DFF69B5B1E962F5B0009BAD7 /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
+		DFF69B5C1E962F5B0009BAD7 /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
+		DFF69B5F1E96727B0009BAD7 /* WorkBenchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkBenchViewController.h; sourceTree = "<group>"; };
+		DFF69B601E96727B0009BAD7 /* WorkBenchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkBenchViewController.m; sourceTree = "<group>"; };
+		DFF69B621E9678710009BAD7 /* MenuListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuListCell.h; sourceTree = "<group>"; };
+		DFF69B631E9678710009BAD7 /* MenuListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuListCell.m; sourceTree = "<group>"; };
+		DFF69B651E967CD40009BAD7 /* MenuList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuList.h; sourceTree = "<group>"; };
+		DFF69B661E967CD40009BAD7 /* MenuList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuList.m; sourceTree = "<group>"; };
+		DFF69B681E968CFD0009BAD7 /* MenuListSubCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuListSubCell.h; sourceTree = "<group>"; };
+		DFF69B691E968CFD0009BAD7 /* MenuListSubCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuListSubCell.m; sourceTree = "<group>"; };
+		DFF69B6B1E9694DB0009BAD7 /* MenuListSecondSubCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuListSecondSubCell.h; sourceTree = "<group>"; };
+		DFF69B6C1E9694DB0009BAD7 /* MenuListSecondSubCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuListSecondSubCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFF69AF91E952D860009BAD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A300B97907CF910FE9C20958 /* libPods-traderen.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF69B121E952D860009BAD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF69B1D1E952D860009BAD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54D04251A1C1336453ACFFEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A86AC69DAE5DE4360DDB929A /* Pods-traderen.debug.xcconfig */,
+				1EC52A3D688C80E11E08B9DD /* Pods-traderen.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2C0C73CF0B980884243965F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				569088E280B4D3668BB124DB /* libPods-traderen.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF4AA1891EB8519700C144A4 /* MailAttachment */ = {
+			isa = PBXGroup;
+			children = (
+				DF4AA18A1EB8526A00C144A4 /* MailAttachmentViewController.h */,
+				DF4AA18B1EB8526A00C144A4 /* MailAttachmentViewController.m */,
+				DF4AA3E61EC5A37C00C144A4 /* MailImageAttachmentViewController.h */,
+				DF4AA3E71EC5A37C00C144A4 /* MailImageAttachmentViewController.m */,
+				DF4AA3E91EC5A69200C144A4 /* MailDocAttachmentViewController.h */,
+				DF4AA3EA1EC5A69200C144A4 /* MailDocAttachmentViewController.m */,
+			);
+			path = MailAttachment;
+			sourceTree = "<group>";
+		};
+		DF4AA1931EB982DD00C144A4 /* MailSend */ = {
+			isa = PBXGroup;
+			children = (
+				DF4AA3DC1EC548C500C144A4 /* MailAttachmentInfoModel.h */,
+				DF4AA3DD1EC548C500C144A4 /* MailAttachmentInfoModel.m */,
+			);
+			path = MailSend;
+			sourceTree = "<group>";
+		};
+		DF4AA1941EB9831A00C144A4 /* MailSend */ = {
+			isa = PBXGroup;
+			children = (
+				DF4AA1951EB9845900C144A4 /* MailSendViewController.h */,
+				DF4AA3D71EC2EFB900C144A4 /* MailSendViewController.m */,
+			);
+			path = MailSend;
+			sourceTree = "<group>";
+		};
+		DF4AA1D11EC0925D00C144A4 /* JZTableViewRowAction */ = {
+			isa = PBXGroup;
+			children = (
+				DF4AA1D21EC0925D00C144A4 /* UITableViewCell+JZExtension.m */,
+				DF4AA1D31EC0925D00C144A4 /* UITableViewRowAction+JZExtension.h */,
+				DF4AA1D41EC0925D00C144A4 /* UITableViewRowAction+JZExtension.m */,
+				DF4AA1D51EC0925D00C144A4 /* UITableViewRowAction.m */,
+			);
+			path = JZTableViewRowAction;
+			sourceTree = "<group>";
+		};
+		DF4AA1D61EC0925D00C144A4 /* KGModal */ = {
+			isa = PBXGroup;
+			children = (
+				DF4AA1D71EC0925D00C144A4 /* KGModal.h */,
+				DF4AA1D81EC0925D00C144A4 /* KGModal.m */,
+			);
+			path = KGModal;
+			sourceTree = "<group>";
+		};
+		DF4AA1D91EC0925D00C144A4 /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DF4AA1DA1EC0925D00C144A4 /* RECommonFunctions.h */,
+				DF4AA1DB1EC0925D00C144A4 /* RECommonFunctions.m */,
+				DF4AA1DC1EC0925D00C144A4 /* RESideMenu.h */,
+				DF4AA1DD1EC0925D00C144A4 /* RESideMenu.m */,
+				DF4AA1DE1EC0925D00C144A4 /* UIViewController+RESideMenu.h */,
+				DF4AA1DF1EC0925D00C144A4 /* UIViewController+RESideMenu.m */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		DF4AA3DF1EC554DC00C144A4 /* MailSend */ = {
+			isa = PBXGroup;
+			children = (
+				DF4AA3E01EC5551900C144A4 /* UploadAttachmentCollectionViewCell.h */,
+				DF4AA3E11EC5551900C144A4 /* UploadAttachmentCollectionViewCell.m */,
+			);
+			path = MailSend;
+			sourceTree = "<group>";
+		};
+		DF922DEA1E9B11410060BA4D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA02B71E9B59C70073E9C9 /* UIView+Extension.h */,
+				DFCA02B81E9B59C70073E9C9 /* UIView+Extension.m */,
+				DFCD65D01E9723C40006C0D0 /* MBProgressHUD+XQ.h */,
+				DFCD65D11E9723C40006C0D0 /* MBProgressHUD+XQ.m */,
+				DF922DEB1E9B13170060BA4D /* NSString+MD5.h */,
+				DF922DEC1E9B13170060BA4D /* NSString+MD5.m */,
+				DFCA03041EA4A2A50073E9C9 /* NSString+CreateTime.h */,
+				DFCA03051EA4A2A50073E9C9 /* NSString+CreateTime.m */,
+				DFCA03071EA4B7DE0073E9C9 /* NSString+MailLabel.h */,
+				DFCA03081EA4B7DE0073E9C9 /* NSString+MailLabel.m */,
+				DF4AA1901EB87DA800C144A4 /* NSString+Base64.h */,
+				DF4AA1911EB87DA800C144A4 /* NSString+Base64.m */,
+				DF4AA3E31EC55D2600C144A4 /* UIImage+ImageSize.h */,
+				DF4AA3E41EC55D2600C144A4 /* UIImage+ImageSize.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		DFCA02AF1E9B1EFD0073E9C9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DFCA02B31E9B256B0073E9C9 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				DF4AA1D11EC0925D00C144A4 /* JZTableViewRowAction */,
+				DF4AA1D61EC0925D00C144A4 /* KGModal */,
+				DF4AA1D91EC0925D00C144A4 /* RESideMenu */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		DFCA02BD1E9B7A130073E9C9 /* MoreVC */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA02BE1E9B7A500073E9C9 /* MoreCollectionViewCell.h */,
+				DFCA02BF1E9B7A500073E9C9 /* MoreCollectionViewCell.m */,
+			);
+			path = MoreVC;
+			sourceTree = "<group>";
+		};
+		DFCA02C11E9B827C0073E9C9 /* Mail */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA033D1EADE6ED0073E9C9 /* MailAndMailBox */,
+				DFCA033C1EADE6960073E9C9 /* MailFolder */,
+				DFCA03371EAD977C0073E9C9 /* MailDetail */,
+				DF4AA1891EB8519700C144A4 /* MailAttachment */,
+				DF4AA1941EB9831A00C144A4 /* MailSend */,
+			);
+			path = Mail;
+			sourceTree = "<group>";
+		};
+		DFCA02C51E9C9CC90073E9C9 /* Mail */ = {
+			isa = PBXGroup;
+			children = (
+				DF4AA3DF1EC554DC00C144A4 /* MailSend */,
+				DFCA03451EAEEFC50073E9C9 /* MailDetail */,
+				DFCA032F1EAB33130073E9C9 /* MailFolder */,
+				DFCA02EF1EA1CC430073E9C9 /* MailBox */,
+				DFCA02F01EA1CC910073E9C9 /* Mail */,
+			);
+			path = Mail;
+			sourceTree = "<group>";
+		};
+		DFCA02CC1E9CA7140073E9C9 /* Mail */ = {
+			isa = PBXGroup;
+			children = (
+				DF4AA1931EB982DD00C144A4 /* MailSend */,
+				DFCA033E1EADEBDC0073E9C9 /* MailDetail */,
+				DFCA03281EAB1E600073E9C9 /* MailFolder */,
+				DFCA02FA1EA447850073E9C9 /* Mail */,
+				DFCA02CD1E9CA7950073E9C9 /* MailBox */,
+			);
+			path = Mail;
+			sourceTree = "<group>";
+		};
+		DFCA02CD1E9CA7950073E9C9 /* MailBox */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA02D11E9CA8A10073E9C9 /* UserMailBoxListCell.h */,
+				DFCA02D21E9CA8A10073E9C9 /* UserMailBoxListCell.m */,
+				DFCA02D41E9CB7F20073E9C9 /* UserMailBoxList.h */,
+				DFCA02D51E9CB7F20073E9C9 /* UserMailBoxList.m */,
+				DFCA02DA1E9CBFC60073E9C9 /* UserSmartMailBoxChildList.h */,
+				DFCA02DB1E9CBFC60073E9C9 /* UserSmartMailBoxChildList.m */,
+				DFCA02E31E9E1B1D0073E9C9 /* UserSmartMailBoxChildListCell.h */,
+				DFCA02E41E9E1B1D0073E9C9 /* UserSmartMailBoxChildListCell.m */,
+			);
+			path = MailBox;
+			sourceTree = "<group>";
+		};
+		DFCA02E11E9E038F0073E9C9 /* Marco */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA02E21E9E03D70073E9C9 /* Singleton.h */,
+			);
+			path = Marco;
+			sourceTree = "<group>";
+		};
+		DFCA02EF1EA1CC430073E9C9 /* MailBox */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA02C61E9C9D4F0073E9C9 /* SmartFolderTableViewCell.h */,
+				DFCA02C71E9C9D4F0073E9C9 /* SmartFolderTableViewCell.m */,
+			);
+			path = MailBox;
+			sourceTree = "<group>";
+		};
+		DFCA02F01EA1CC910073E9C9 /* Mail */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA031F1EA7072C0073E9C9 /* MailTableView.h */,
+				DFCA03201EA7072C0073E9C9 /* MailTableView.m */,
+				DFCA02F11EA1CD040073E9C9 /* MailTableViewCell.h */,
+				DFCA02F21EA1CD040073E9C9 /* MailTableViewCell.m */,
+				DFCA02F41EA1E8410073E9C9 /* MailTagCollectionViewCell.h */,
+				DFCA02F51EA1E8410073E9C9 /* MailTagCollectionViewCell.m */,
+				DFCA02F71EA21B560073E9C9 /* MailTagCollectionView.h */,
+				DFCA02F81EA21B560073E9C9 /* MailTagCollectionView.m */,
+			);
+			path = Mail;
+			sourceTree = "<group>";
+		};
+		DFCA02FA1EA447850073E9C9 /* Mail */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA02FE1EA4493A0073E9C9 /* MailHomeMailList.h */,
+				DFCA02FF1EA4493A0073E9C9 /* MailHomeMailList.m */,
+				DFCA03011EA449CF0073E9C9 /* MailHomeMailListCell.h */,
+				DFCA03021EA449CF0073E9C9 /* MailHomeMailListCell.m */,
+			);
+			path = Mail;
+			sourceTree = "<group>";
+		};
+		DFCA03281EAB1E600073E9C9 /* MailFolder */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA03291EAB1EEA0073E9C9 /* MailFolderCell.h */,
+				DFCA032A1EAB1EEA0073E9C9 /* MailFolderCell.m */,
+			);
+			path = MailFolder;
+			sourceTree = "<group>";
+		};
+		DFCA032F1EAB33130073E9C9 /* MailFolder */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA03301EAB336F0073E9C9 /* MailFolderTableViewCell.h */,
+				DFCA03311EAB336F0073E9C9 /* MailFolderTableViewCell.m */,
+				DF4AA19B1EBAD53E00C144A4 /* MailFolderChildArrayTableViewCell.h */,
+				DF4AA19C1EBAD53E00C144A4 /* MailFolderChildArrayTableViewCell.m */,
+			);
+			path = MailFolder;
+			sourceTree = "<group>";
+		};
+		DFCA03371EAD977C0073E9C9 /* MailDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA03381EAD98040073E9C9 /* MailDetailViewController.h */,
+				DFCA03391EAD98040073E9C9 /* MailDetailViewController.m */,
+			);
+			path = MailDetail;
+			sourceTree = "<group>";
+		};
+		DFCA033C1EADE6960073E9C9 /* MailFolder */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA032C1EAB2B570073E9C9 /* MailMoveFolderViewController.h */,
+				DFCA032D1EAB2B570073E9C9 /* MailMoveFolderViewController.m */,
+				DF4AA1981EB9C4A200C144A4 /* MailFolderViewController.h */,
+				DF4AA1991EB9C4A200C144A4 /* MailFolderViewController.m */,
+			);
+			path = MailFolder;
+			sourceTree = "<group>";
+		};
+		DFCA033D1EADE6ED0073E9C9 /* MailAndMailBox */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA02C21E9B82CF0073E9C9 /* MailHomeViewController.h */,
+				DFCA02C31E9B82CF0073E9C9 /* MailHomeViewController.m */,
+				DFCA02E91E9F6DA80073E9C9 /* MailHomeDrawerViewController.h */,
+				DFCA02EA1E9F6DA80073E9C9 /* MailHomeDrawerViewController.m */,
+				DFCA02EC1EA063890073E9C9 /* MailHomeCenterViewController.h */,
+				DFCA02ED1EA063890073E9C9 /* MailHomeCenterViewController.m */,
+			);
+			path = MailAndMailBox;
+			sourceTree = "<group>";
+		};
+		DFCA033E1EADEBDC0073E9C9 /* MailDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA033F1EADEC130073E9C9 /* MailDetailModel.h */,
+				DFCA03401EADEC130073E9C9 /* MailDetailModel.m */,
+				DFCA03421EAE0F910073E9C9 /* MailDetailFileModel.h */,
+				DFCA03431EAE0F910073E9C9 /* MailDetailFileModel.m */,
+			);
+			path = MailDetail;
+			sourceTree = "<group>";
+		};
+		DFCA03451EAEEFC50073E9C9 /* MailDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA03461EAEEFFF0073E9C9 /* TagLabel.h */,
+				DFCA03471EAEEFFF0073E9C9 /* TagLabel.m */,
+				DFCA03491EAEF3060073E9C9 /* TagLabelView.h */,
+				DFCA034A1EAEF3060073E9C9 /* TagLabelView.m */,
+				DFF1F3221EAF20100075EDAB /* RecipientLabelView.h */,
+				DFF1F3231EAF20100075EDAB /* RecipientLabelView.m */,
+				DF4AA1851EB3218400C144A4 /* MailDetailCollectionViewCell.h */,
+				DF4AA1861EB3218400C144A4 /* MailDetailCollectionViewCell.m */,
+			);
+			path = MailDetail;
+			sourceTree = "<group>";
+		};
+		DFCD65CF1E97235D0006C0D0 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				DFCD65D31E9739650006C0D0 /* UserDefaultsManager.h */,
+				DFCD65D41E9739650006C0D0 /* UserDefaultsManager.m */,
+				DFCA02DD1E9E01A80073E9C9 /* UserInfoManager.h */,
+				DFCA02DE1E9E01A80073E9C9 /* UserInfoManager.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		DFCD65D91E9786DA0006C0D0 /* WorkBench */ = {
+			isa = PBXGroup;
+			children = (
+				DFCD65DA1E9787800006C0D0 /* WorkBenchCollectionViewCell.h */,
+				DFCD65DB1E9787800006C0D0 /* WorkBenchCollectionViewCell.m */,
+			);
+			path = WorkBench;
+			sourceTree = "<group>";
+		};
+		DFF69AF31E952D860009BAD7 = {
+			isa = PBXGroup;
+			children = (
+				DFF69AFE1E952D860009BAD7 /* traderen */,
+				DFF69B181E952D860009BAD7 /* traderenTests */,
+				DFF69B231E952D860009BAD7 /* traderenUITests */,
+				DFF69AFD1E952D860009BAD7 /* Products */,
+				54D04251A1C1336453ACFFEE /* Pods */,
+				D2C0C73CF0B980884243965F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DFF69AFD1E952D860009BAD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69AFC1E952D860009BAD7 /* traderen.app */,
+				DFF69B151E952D860009BAD7 /* traderenTests.xctest */,
+				DFF69B201E952D860009BAD7 /* traderenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFF69AFE1E952D860009BAD7 /* traderen */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B401E95E11A0009BAD7 /* AppDelegate */,
+				DFF69B351E9530FF0009BAD7 /* Main */,
+				DFF69B341E952F4E0009BAD7 /* NetWork */,
+				DFCD65CF1E97235D0006C0D0 /* Tool */,
+				DF922DEA1E9B11410060BA4D /* Category */,
+				DFCA02B31E9B256B0073E9C9 /* Library */,
+				DFCA02E11E9E038F0073E9C9 /* Marco */,
+				DFF69B0B1E952D860009BAD7 /* Assets.xcassets */,
+				DFF69B0D1E952D860009BAD7 /* LaunchScreen.storyboard */,
+				DFF69B101E952D860009BAD7 /* Info.plist */,
+				DFCA03161EA5BEA90073E9C9 /* Localizable.strings */,
+				DFF69AFF1E952D860009BAD7 /* Supporting Files */,
+			);
+			path = traderen;
+			sourceTree = "<group>";
+		};
+		DFF69AFF1E952D860009BAD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B001E952D860009BAD7 /* main.m */,
+				DFCA03361EAB73320073E9C9 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFF69B181E952D860009BAD7 /* traderenTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B191E952D860009BAD7 /* traderenTests.m */,
+				DFF69B1B1E952D860009BAD7 /* Info.plist */,
+			);
+			path = traderenTests;
+			sourceTree = "<group>";
+		};
+		DFF69B231E952D860009BAD7 /* traderenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B241E952D860009BAD7 /* traderenUITests.m */,
+				DFF69B261E952D860009BAD7 /* Info.plist */,
+			);
+			path = traderenUITests;
+			sourceTree = "<group>";
+		};
+		DFF69B341E952F4E0009BAD7 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B4F1E95F11D0009BAD7 /* HTTPInterface.h */,
+				DFF69B501E95F11D0009BAD7 /* HTTPInterface.m */,
+				DFF69B521E9612B70009BAD7 /* HTTPInterface+Mail.h */,
+				DFF69B531E9612B70009BAD7 /* HTTPInterface+Mail.m */,
+				DFCA02C91E9C9FD00073E9C9 /* HTTPInterface+MailBox.h */,
+				DFCA02CA1E9C9FD00073E9C9 /* HTTPInterface+MailBox.m */,
+				DFCA03251EAA09360073E9C9 /* HTTPInterface+Folder.h */,
+				DFCA03261EAA09360073E9C9 /* HTTPInterface+Folder.m */,
+				DF4AA18D1EB870EE00C144A4 /* HTTPInterface+Attachment.h */,
+				DF4AA18E1EB870EE00C144A4 /* HTTPInterface+Attachment.m */,
+				DF4AA3D91EC3427200C144A4 /* HTTPInterface+MailSend.h */,
+				DF4AA3DA1EC3427200C144A4 /* HTTPInterface+MailSend.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		DFF69B351E9530FF0009BAD7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B451E95E30B0009BAD7 /* Controller */,
+				DFF69B461E95E3190009BAD7 /* Model */,
+				DFF69B471E95E3270009BAD7 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DFF69B381E9531990009BAD7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B481E95E4040009BAD7 /* LoginViewController.h */,
+				DFF69B491E95E4040009BAD7 /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DFF69B401E95E11A0009BAD7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B021E952D860009BAD7 /* AppDelegate.h */,
+				DFF69B031E952D860009BAD7 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DFF69B411E95E2440009BAD7 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B4B1E95E4140009BAD7 /* TabBarViewController.h */,
+				DFF69B4C1E95E4140009BAD7 /* TabBarViewController.m */,
+				DFCA02BA1E9B6E5C0073E9C9 /* MoreViewController.h */,
+				DFCA02BB1E9B6E5C0073E9C9 /* MoreViewController.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		DFF69B451E95E30B0009BAD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B381E9531990009BAD7 /* Login */,
+				DFF69B411E95E2440009BAD7 /* TabBar */,
+				DFF69B4E1E95E4FB0009BAD7 /* WorkBench */,
+				DFCA02C11E9B827C0073E9C9 /* Mail */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DFF69B461E95E3190009BAD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA02CC1E9CA7140073E9C9 /* Mail */,
+				DFF69B551E961E440009BAD7 /* Login */,
+				DFF69B5E1E9671300009BAD7 /* WorkBench */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DFF69B471E95E3270009BAD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B081E952D860009BAD7 /* Main.storyboard */,
+				DFCA02AF1E9B1EFD0073E9C9 /* Login */,
+				DFF69B5A1E962ECE0009BAD7 /* TabBar */,
+				DFCD65D91E9786DA0006C0D0 /* WorkBench */,
+				DFCA02C51E9C9CC90073E9C9 /* Mail */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFF69B4E1E95E4FB0009BAD7 /* WorkBench */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B5F1E96727B0009BAD7 /* WorkBenchViewController.h */,
+				DFF69B601E96727B0009BAD7 /* WorkBenchViewController.m */,
+			);
+			path = WorkBench;
+			sourceTree = "<group>";
+		};
+		DFF69B551E961E440009BAD7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B561E961ED00009BAD7 /* UserLoginModel.h */,
+				DFF69B571E961ED00009BAD7 /* UserLoginModel.m */,
+				DFCD65CC1E97189A0006C0D0 /* UserMailLabelCell.h */,
+				DFCD65CD1E97189A0006C0D0 /* UserMailLabelCell.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DFF69B5A1E962ECE0009BAD7 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B5B1E962F5B0009BAD7 /* CustomTabBar.h */,
+				DFF69B5C1E962F5B0009BAD7 /* CustomTabBar.m */,
+				DFCA02BD1E9B7A130073E9C9 /* MoreVC */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		DFF69B5E1E9671300009BAD7 /* WorkBench */ = {
+			isa = PBXGroup;
+			children = (
+				DFF69B651E967CD40009BAD7 /* MenuList.h */,
+				DFF69B661E967CD40009BAD7 /* MenuList.m */,
+				DFF69B621E9678710009BAD7 /* MenuListCell.h */,
+				DFF69B631E9678710009BAD7 /* MenuListCell.m */,
+				DFF69B681E968CFD0009BAD7 /* MenuListSubCell.h */,
+				DFF69B691E968CFD0009BAD7 /* MenuListSubCell.m */,
+				DFF69B6B1E9694DB0009BAD7 /* MenuListSecondSubCell.h */,
+				DFF69B6C1E9694DB0009BAD7 /* MenuListSecondSubCell.m */,
+			);
+			path = WorkBench;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFF69AFB1E952D860009BAD7 /* traderen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF69B291E952D860009BAD7 /* Build configuration list for PBXNativeTarget "traderen" */;
+			buildPhases = (
+				51940C0EA2B80B522CD042BC /* [CP] Check Pods Manifest.lock */,
+				DFF69AF81E952D860009BAD7 /* Sources */,
+				DFF69AF91E952D860009BAD7 /* Frameworks */,
+				DFF69AFA1E952D860009BAD7 /* Resources */,
+				4B31DFA1978283D197788808 /* [CP] Embed Pods Frameworks */,
+				7A621F4659646EF76AD8FDEB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = traderen;
+			productName = traderen;
+			productReference = DFF69AFC1E952D860009BAD7 /* traderen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFF69B141E952D860009BAD7 /* traderenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF69B2C1E952D860009BAD7 /* Build configuration list for PBXNativeTarget "traderenTests" */;
+			buildPhases = (
+				DFF69B111E952D860009BAD7 /* Sources */,
+				DFF69B121E952D860009BAD7 /* Frameworks */,
+				DFF69B131E952D860009BAD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFF69B171E952D860009BAD7 /* PBXTargetDependency */,
+			);
+			name = traderenTests;
+			productName = traderenTests;
+			productReference = DFF69B151E952D860009BAD7 /* traderenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFF69B1F1E952D860009BAD7 /* traderenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF69B2F1E952D860009BAD7 /* Build configuration list for PBXNativeTarget "traderenUITests" */;
+			buildPhases = (
+				DFF69B1C1E952D860009BAD7 /* Sources */,
+				DFF69B1D1E952D860009BAD7 /* Frameworks */,
+				DFF69B1E1E952D860009BAD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFF69B221E952D860009BAD7 /* PBXTargetDependency */,
+			);
+			name = traderenUITests;
+			productName = traderenUITests;
+			productReference = DFF69B201E952D860009BAD7 /* traderenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFF69AF41E952D860009BAD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "陈伟杰";
+				TargetAttributes = {
+					DFF69AFB1E952D860009BAD7 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = RW2E2LGERZ;
+						ProvisioningStyle = Automatic;
+					};
+					DFF69B141E952D860009BAD7 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFF69AFB1E952D860009BAD7;
+					};
+					DFF69B1F1E952D860009BAD7 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFF69AFB1E952D860009BAD7;
+					};
+				};
+			};
+			buildConfigurationList = DFF69AF71E952D860009BAD7 /* Build configuration list for PBXProject "traderen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFF69AF31E952D860009BAD7;
+			productRefGroup = DFF69AFD1E952D860009BAD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFF69AFB1E952D860009BAD7 /* traderen */,
+				DFF69B141E952D860009BAD7 /* traderenTests */,
+				DFF69B1F1E952D860009BAD7 /* traderenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFF69AFA1E952D860009BAD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF69B0F1E952D860009BAD7 /* LaunchScreen.storyboard in Resources */,
+				DFCA03141EA5BEA90073E9C9 /* Localizable.strings in Resources */,
+				DFF69B0C1E952D860009BAD7 /* Assets.xcassets in Resources */,
+				DFF69B0A1E952D860009BAD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF69B131E952D860009BAD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF69B1E1E952D860009BAD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B31DFA1978283D197788808 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-traderen/Pods-traderen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51940C0EA2B80B522CD042BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A621F4659646EF76AD8FDEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-traderen/Pods-traderen-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFF69AF81E952D860009BAD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFCA02DF1E9E01A80073E9C9 /* UserInfoManager.m in Sources */,
+				DF4AA1E01EC0925D00C144A4 /* UITableViewCell+JZExtension.m in Sources */,
+				DF4AA3EB1EC5A69200C144A4 /* MailDocAttachmentViewController.m in Sources */,
+				DF4AA18F1EB870EE00C144A4 /* HTTPInterface+Attachment.m in Sources */,
+				DF4AA3D81EC2EFB900C144A4 /* MailSendViewController.m in Sources */,
+				DF4AA1E31EC0925D00C144A4 /* KGModal.m in Sources */,
+				DF4AA19D1EBAD53E00C144A4 /* MailFolderChildArrayTableViewCell.m in Sources */,
+				DFCA02CB1E9C9FD00073E9C9 /* HTTPInterface+MailBox.m in Sources */,
+				DFCA03441EAE0F910073E9C9 /* MailDetailFileModel.m in Sources */,
+				DFCA02E51E9E1B1E0073E9C9 /* UserSmartMailBoxChildListCell.m in Sources */,
+				DFF69B5D1E962F5B0009BAD7 /* CustomTabBar.m in Sources */,
+				DFCA03061EA4A2A50073E9C9 /* NSString+CreateTime.m in Sources */,
+				DFCD65D21E9723C40006C0D0 /* MBProgressHUD+XQ.m in Sources */,
+				DFCA02B91E9B59C70073E9C9 /* UIView+Extension.m in Sources */,
+				DFCA03481EAEEFFF0073E9C9 /* TagLabel.m in Sources */,
+				DFCA02F61EA1E8410073E9C9 /* MailTagCollectionViewCell.m in Sources */,
+				DF4AA1E21EC0925D00C144A4 /* UITableViewRowAction.m in Sources */,
+				DFCD65D51E9739650006C0D0 /* UserDefaultsManager.m in Sources */,
+				DFCA02EE1EA063890073E9C9 /* MailHomeCenterViewController.m in Sources */,
+				DFCD65DC1E9787800006C0D0 /* WorkBenchCollectionViewCell.m in Sources */,
+				DFCA02EB1E9F6DA80073E9C9 /* MailHomeDrawerViewController.m in Sources */,
+				DFF69B4D1E95E4140009BAD7 /* TabBarViewController.m in Sources */,
+				DF4AA3DE1EC548C500C144A4 /* MailAttachmentInfoModel.m in Sources */,
+				DFF69B511E95F11D0009BAD7 /* HTTPInterface.m in Sources */,
+				DFCA03031EA449CF0073E9C9 /* MailHomeMailListCell.m in Sources */,
+				DFF69B041E952D860009BAD7 /* AppDelegate.m in Sources */,
+				DFF1F3241EAF20100075EDAB /* RecipientLabelView.m in Sources */,
+				DF922DED1E9B13170060BA4D /* NSString+MD5.m in Sources */,
+				DF4AA1E61EC0925D00C144A4 /* UIViewController+RESideMenu.m in Sources */,
+				DF4AA3E81EC5A37C00C144A4 /* MailImageAttachmentViewController.m in Sources */,
+				DF4AA1E11EC0925D00C144A4 /* UITableViewRowAction+JZExtension.m in Sources */,
+				DFCA03411EADEC130073E9C9 /* MailDetailModel.m in Sources */,
+				DFCA02F91EA21B560073E9C9 /* MailTagCollectionView.m in Sources */,
+				DFCA02DC1E9CBFC60073E9C9 /* UserSmartMailBoxChildList.m in Sources */,
+				DFCA03001EA4493A0073E9C9 /* MailHomeMailList.m in Sources */,
+				DFCA03321EAB336F0073E9C9 /* MailFolderTableViewCell.m in Sources */,
+				DFF69B011E952D860009BAD7 /* main.m in Sources */,
+				DFF69B541E9612B70009BAD7 /* HTTPInterface+Mail.m in Sources */,
+				DF4AA3E21EC5551900C144A4 /* UploadAttachmentCollectionViewCell.m in Sources */,
+				DF4AA18C1EB8526A00C144A4 /* MailAttachmentViewController.m in Sources */,
+				DFCA03211EA7072C0073E9C9 /* MailTableView.m in Sources */,
+				DFCA02C01E9B7A500073E9C9 /* MoreCollectionViewCell.m in Sources */,
+				DFCA032B1EAB1EEB0073E9C9 /* MailFolderCell.m in Sources */,
+				DF4AA1E51EC0925D00C144A4 /* RESideMenu.m in Sources */,
+				DFF69B4A1E95E4040009BAD7 /* LoginViewController.m in Sources */,
+				DFCA033A1EAD98040073E9C9 /* MailDetailViewController.m in Sources */,
+				DFF69B611E96727B0009BAD7 /* WorkBenchViewController.m in Sources */,
+				DFCA03091EA4B7DE0073E9C9 /* NSString+MailLabel.m in Sources */,
+				DFCD65CE1E97189A0006C0D0 /* UserMailLabelCell.m in Sources */,
+				DFCA02F31EA1CD040073E9C9 /* MailTableViewCell.m in Sources */,
+				DF4AA19A1EB9C4A200C144A4 /* MailFolderViewController.m in Sources */,
+				DF4AA1871EB3218400C144A4 /* MailDetailCollectionViewCell.m in Sources */,
+				DFCA02C41E9B82CF0073E9C9 /* MailHomeViewController.m in Sources */,
+				DFCA032E1EAB2B570073E9C9 /* MailMoveFolderViewController.m in Sources */,
+				DFF69B641E9678710009BAD7 /* MenuListCell.m in Sources */,
+				DFCA02D31E9CA8A10073E9C9 /* UserMailBoxListCell.m in Sources */,
+				DFF69B581E961ED00009BAD7 /* UserLoginModel.m in Sources */,
+				DF4AA1921EB87DA800C144A4 /* NSString+Base64.m in Sources */,
+				DFCA034B1EAEF3060073E9C9 /* TagLabelView.m in Sources */,
+				DF4AA1E41EC0925D00C144A4 /* RECommonFunctions.m in Sources */,
+				DFCA02C81E9C9D4F0073E9C9 /* SmartFolderTableViewCell.m in Sources */,
+				DFF69B671E967CD40009BAD7 /* MenuList.m in Sources */,
+				DFCA03271EAA09360073E9C9 /* HTTPInterface+Folder.m in Sources */,
+				DFF69B6A1E968CFD0009BAD7 /* MenuListSubCell.m in Sources */,
+				DF4AA3DB1EC3427200C144A4 /* HTTPInterface+MailSend.m in Sources */,
+				DF4AA3E51EC55D2600C144A4 /* UIImage+ImageSize.m in Sources */,
+				DFCA02BC1E9B6E5C0073E9C9 /* MoreViewController.m in Sources */,
+				DFCA02D61E9CB7F20073E9C9 /* UserMailBoxList.m in Sources */,
+				DFF69B6D1E9694DB0009BAD7 /* MenuListSecondSubCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF69B111E952D860009BAD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF69B1A1E952D860009BAD7 /* traderenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF69B1C1E952D860009BAD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF69B251E952D860009BAD7 /* traderenUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFF69B171E952D860009BAD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFF69AFB1E952D860009BAD7 /* traderen */;
+			targetProxy = DFF69B161E952D860009BAD7 /* PBXContainerItemProxy */;
+		};
+		DFF69B221E952D860009BAD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFF69AFB1E952D860009BAD7 /* traderen */;
+			targetProxy = DFF69B211E952D860009BAD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFCA03161EA5BEA90073E9C9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFCA03151EA5BEA90073E9C9 /* zh-Hans */,
+				DFCA03171EA5C3280073E9C9 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DFF69B081E952D860009BAD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFF69B091E952D860009BAD7 /* Base */,
+				DFCA03101EA5BE390073E9C9 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		DFF69B0D1E952D860009BAD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFF69B0E1E952D860009BAD7 /* Base */,
+				DFCA03111EA5BE390073E9C9 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFF69B271E952D860009BAD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DFF69B281E952D860009BAD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFF69B2A1E952D860009BAD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A86AC69DAE5DE4360DDB929A /* Pods-traderen.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RW2E2LGERZ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/traderen/PrefixHeader.pch";
+				INFOPLIST_FILE = traderen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.Goodluck.traderen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		DFF69B2B1E952D860009BAD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EC52A3D688C80E11E08B9DD /* Pods-traderen.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RW2E2LGERZ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/traderen/PrefixHeader.pch";
+				INFOPLIST_FILE = traderen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.Goodluck.traderen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		DFF69B2D1E952D860009BAD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ningbo China Goodluck Network Technology Co., Ltd. (RW2E2LGERZ)";
+				INFOPLIST_FILE = traderenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yimai.traderenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "78f12014-ccff-4bd6-9749-fcc2eeabd118";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/traderen.app/traderen";
+			};
+			name = Debug;
+		};
+		DFF69B2E1E952D860009BAD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ningbo China Goodluck Network Technology Co., Ltd. (RW2E2LGERZ)";
+				INFOPLIST_FILE = traderenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yimai.traderenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "78f12014-ccff-4bd6-9749-fcc2eeabd118";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/traderen.app/traderen";
+			};
+			name = Release;
+		};
+		DFF69B301E952D860009BAD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = traderenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yimai.traderenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = traderen;
+			};
+			name = Debug;
+		};
+		DFF69B311E952D860009BAD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = traderenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yimai.traderenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = traderen;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFF69AF71E952D860009BAD7 /* Build configuration list for PBXProject "traderen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF69B271E952D860009BAD7 /* Debug */,
+				DFF69B281E952D860009BAD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFF69B291E952D860009BAD7 /* Build configuration list for PBXNativeTarget "traderen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF69B2A1E952D860009BAD7 /* Debug */,
+				DFF69B2B1E952D860009BAD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFF69B2C1E952D860009BAD7 /* Build configuration list for PBXNativeTarget "traderenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF69B2D1E952D860009BAD7 /* Debug */,
+				DFF69B2E1E952D860009BAD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFF69B2F1E952D860009BAD7 /* Build configuration list for PBXNativeTarget "traderenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF69B301E952D860009BAD7 /* Debug */,
+				DFF69B311E952D860009BAD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFF69AF41E952D860009BAD7 /* Project object */;
+}
