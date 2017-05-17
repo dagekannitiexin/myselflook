@@ -53,7 +53,7 @@
     
     UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithTitle:@"确定" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonItemClick:)];
     [buttonItem setTintColor:[UIColor colorWithRed:1/255.0 green:147/255.0 blue:221/255.0 alpha:1.0]];
-    self.rightBarButtonItem = buttonItem;
+    self.navigationItem.rightBarButtonItem = buttonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,14 +86,16 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:@"MoveMailToAnotherFolder" object:nil userInfo:@{@"folderCellModel":cellModel}];
     }
     
-    MailHomeDrawerViewController *mailHomeDrawerVC = nil;
-    for (UIViewController *VC in self.navigationController.childViewControllers) {
-        if ([VC isKindOfClass:[MailHomeDrawerViewController class]]) {
-            mailHomeDrawerVC = (MailHomeDrawerViewController *)VC;
-            break;
-        }
-    }
-    [self.navigationController popToViewController:mailHomeDrawerVC animated:YES];
+//    MailHomeDrawerViewController *mailHomeDrawerVC = nil;
+//    for (UIViewController *VC in self.navigationController.childViewControllers) {
+//        if ([VC isKindOfClass:[MailHomeDrawerViewController class]]) {
+//            mailHomeDrawerVC = (MailHomeDrawerViewController *)VC;
+//            break;
+//        }
+//    }
+    //隐藏导航栏
+//    [self.navigationController popToViewController:mailHomeDrawerVC animated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - FolderBackButtonClick
@@ -103,7 +105,6 @@
         self.folderLevel = 0;
         self.isSelectIndexPath = nil;
         self.buttonBackView.hidden = YES;
-        self.navigationItem.rightBarButtonItem = nil;
         self.buttonViewTopConstraint.constant = -40;
         [self.MailMoveTableView reloadData];
     LRLog(@"self.folder = %ld", self.folderLevel);
@@ -134,7 +135,7 @@
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
     if (self.folderLevel == 0) {
         NSInteger boxId = self.mailBoxList[indexPath.row].id;
         LRLog(@"%ld",boxId);
@@ -151,9 +152,7 @@
         self.boxId = boxId;
         self.folderLevel += 1;
         self.buttonBackView.hidden = NO;
-        self.navigationItem.rightBarButtonItem = self.rightBarButtonItem;
         self.buttonViewTopConstraint.constant = 0;
-//        [self.view layoutIfNeeded];
         [tableView reloadData];
     } else if (self.folderLevel == 1) {
         RLMResults<MailFolderCell *> *results = [MailFolderCell objectsWhere:[NSString stringWithFormat:@"parentid = '%@'", self.mailBoxChildList[indexPath.row].id]];

@@ -31,12 +31,10 @@
     [RLMRealm defaultRealm];
     
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
-    //获取密码
-    NSString *password = [UserDefaultsManager getUserPassword];
     
+    NSString *password = [UserDefaultsManager getUserPassword];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    //  这个有问题
     if (password && ![password isEqualToString:@""] && password.length > 0) {
         [UserInfoManager sharedUserInfoManager].userAccount = [UserDefaultsManager getUserAccount];
         [UserInfoManager sharedUserInfoManager].userMD5Password = password;

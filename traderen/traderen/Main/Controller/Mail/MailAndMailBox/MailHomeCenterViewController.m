@@ -1231,6 +1231,7 @@
         
     }];
 
+    
     UITableViewRowAction *moveAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal image:[UIImage imageNamed:@"邮件移动cell"] handler:^(UITableViewRowAction * _Nullable action, NSIndexPath * _Nullable indexPath) {
         if (tableView.isEditing) {
             [MBProgressHUD showError:@"编辑状态中无法使用此功能" toView:self.view];

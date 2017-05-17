@@ -353,7 +353,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6H-QZ-XY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="152" y="165"/>
+            <point key="canvasLocation" x="129" y="227"/>
         </scene>
         <!--工作台-->
         <scene sceneID="EG8-PB-Mvs">
@@ -877,7 +877,7 @@
                         <viewControllerLayoutGuide type="top" id="dru-HW-6ov"/>
                         <viewControllerLayoutGuide type="bottom" id="pJl-Wk-5JL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dy7-E6-CD8">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="dy7-E6-CD8">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
