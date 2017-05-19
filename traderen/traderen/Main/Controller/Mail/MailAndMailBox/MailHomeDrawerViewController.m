@@ -51,13 +51,15 @@
             break;
         }
     }
-
+//    MailHomeCenterViewController *contentVC = [self.storyboard instantiateViewControllerWithIdentifier:@"MailHomeCenterViewController"];
+//    UINavigationController *contentVCNavi = [[UINavigationController alloc] initWithRootViewController:contentVC];
     self.contentViewController = contentVCNavi;
     self.leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MailHomeViewControllerNavi"];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(leftMenuCallOut:) name:@"leftMenuCallOut" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(leftMenuCallBack:) name:@"leftMenuCallBack" object:nil];
-
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideTabBar:) name:@"hideTabBar" object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(callOutTabBar:) name:@"callOutTabBar" object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

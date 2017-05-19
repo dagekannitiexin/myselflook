@@ -9,17 +9,13 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-
-#import "Define.h"
-
-
-
-
-
-
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
-
+#ifdef DEBUG
+#define LRLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+#define LRLog(...)
+#endif
 
 #define WeakSelf(type)  __weak typeof(type) weak##type = type;
 #define StrongSelf(type)  __strong typeof(type) type = weak##type;
@@ -27,7 +23,8 @@
 //屏幕尺寸，横屏支持
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 8 // 当前Xcode支持iOS8及以上
 
-
+#define SCREEN_WIDTH ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?[UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale:[UIScreen mainScreen].bounds.size.width)
+#define SCREENH_HEIGHT ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?[UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale:[UIScreen mainScreen].bounds.size.height)
 #define SCREEN_SIZE ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?CGSizeMake([UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale,[UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale):[UIScreen mainScreen].bounds.size)
 #else
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width

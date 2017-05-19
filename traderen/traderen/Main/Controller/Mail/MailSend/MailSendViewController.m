@@ -77,6 +77,17 @@
     return _mailBoxArrayTableView;
 }
 
+//- (UIView *)maskView {
+//    if (!_maskView) {
+//        _maskView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT)];
+//        _maskView.backgroundColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.2];
+//        _maskView.hidden = YES;
+//        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapMaskView:)];
+//        [_maskView addGestureRecognizer:tap];
+//        [[UIApplication sharedApplication].keyWindow addSubview:_maskView];
+//    }
+//    return _maskView;
+//}
 
 #pragma mark - LifeCycle
 - (void)viewDidLoad {
@@ -102,7 +113,7 @@
     mailSendBarButtonItem.tintColor = [UIColor colorWithRed:1/255.0 green:147/255.0 blue:221/255.0 alpha:1.0];
     self.navigationItem.rightBarButtonItem = mailSendBarButtonItem;
     
-    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(15, TopView_TotalHeight, SCREEN_WIDTH - 30, SCREEN_HEIGHT - TopView_TotalHeight - 64)];
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(15, TopView_TotalHeight, SCREEN_WIDTH - 30, SCREENH_HEIGHT - TopView_TotalHeight - 64)];
     textView.userInteractionEnabled = YES;
     textView.textAlignment = NSTextAlignmentLeft;
     textView.scrollEnabled = YES;
@@ -161,9 +172,6 @@
 
 #pragma ButtonsAboutAttachment
 - (IBAction)attachmentButtonClick:(UIButton *)sender {
-    //取消键盘响应
-    [self.view endEditing:YES];
-    
     if (!sender.selected) {
         self.attachmentBackView.hidden = NO;
         [UIView animateWithDuration:0.3 animations:^{

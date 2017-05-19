@@ -29,7 +29,6 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-//cell的状态
 - (void)cellStateChange:(NSNotification *)sender {
     NSString *str = sender.userInfo[@"state"];
     if ([str isEqualToString:@"编辑"]) {

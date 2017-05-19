@@ -7,30 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		232301281ECE74A80031EAB1 /* Errors_en_US.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2323011F1ECE74A80031EAB1 /* Errors_en_US.plist */; };
-		232301291ECE74A80031EAB1 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 232301211ECE74A80031EAB1 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2323012A1ECE74A80031EAB1 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 232301231ECE74A80031EAB1 /* JSONModel.m */; };
-		2323012B1ECE74A80031EAB1 /* RESTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 232301251ECE74A80031EAB1 /* RESTError.m */; };
-		2323012C1ECE74A80031EAB1 /* RESTfulOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 232301271ECE74A80031EAB1 /* RESTfulOperation.m */; };
-		2346FC7B1ECD6CF80046E13C /* SLSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FC7A1ECD6CF80046E13C /* SLSearchViewController.m */; };
-		2346FD0A1ECD949F0046E13C /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FCF51ECD949F0046E13C /* NSAlert+MKNetworkKitAdditions.m */; };
-		2346FD0B1ECD949F0046E13C /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FCF71ECD949F0046E13C /* NSData+Base64.m */; };
-		2346FD0C1ECD949F0046E13C /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FCF91ECD949F0046E13C /* NSDate+RFC1123.m */; };
-		2346FD0D1ECD949F0046E13C /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FCFB1ECD949F0046E13C /* NSDictionary+RequestEncoding.m */; };
-		2346FD0E1ECD949F0046E13C /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FCFD1ECD949F0046E13C /* NSString+JSON.m */; };
-		2346FD0F1ECD949F0046E13C /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FCFF1ECD949F0046E13C /* NSString+MKNetworkKitAdditions.m */; };
-		2346FD101ECD949F0046E13C /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FD011ECD949F0046E13C /* UIAlertView+MKNetworkKitAdditions.m */; };
-		2346FD111ECD949F0046E13C /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FD031ECD949F0046E13C /* MKNetworkEngine.m */; };
-		2346FD121ECD949F0046E13C /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FD061ECD949F0046E13C /* MKNetworkOperation.m */; };
-		2346FD131ECD949F0046E13C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FD091ECD949F0046E13C /* Reachability.m */; };
-		2346FD151ECD94D50046E13C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2346FD141ECD94D50046E13C /* Security.framework */; };
-		2346FD171ECD94E30046E13C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2346FD161ECD94E30046E13C /* ImageIO.framework */; };
-		2346FD191ECD94F30046E13C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2346FD181ECD94F30046E13C /* SystemConfiguration.framework */; };
-		2346FD1B1ECD95080046E13C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2346FD1A1ECD95080046E13C /* CFNetwork.framework */; };
-		2346FD221ECD96CC0046E13C /* DesUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FD1E1ECD96CC0046E13C /* DesUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2346FD231ECD96CC0046E13C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FD201ECD96CC0046E13C /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2346FD391ECD99600046E13C /* ModelLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FD381ECD99600046E13C /* ModelLocator.m */; };
-		2346FD3C1ECD99B70046E13C /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346FD3B1ECD99B70046E13C /* Base64.m */; };
 		A300B97907CF910FE9C20958 /* libPods-traderen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 569088E280B4D3668BB124DB /* libPods-traderen.a */; };
 		DF4AA1871EB3218400C144A4 /* MailDetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA1861EB3218400C144A4 /* MailDetailCollectionViewCell.m */; };
 		DF4AA18C1EB8526A00C144A4 /* MailAttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4AA18B1EB8526A00C144A4 /* MailAttachmentViewController.m */; };
@@ -128,52 +104,6 @@
 
 /* Begin PBXFileReference section */
 		1EC52A3D688C80E11E08B9DD /* Pods-traderen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traderen.release.xcconfig"; path = "Pods/Target Support Files/Pods-traderen/Pods-traderen.release.xcconfig"; sourceTree = "<group>"; };
-		2323011F1ECE74A80031EAB1 /* Errors_en_US.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Errors_en_US.plist; sourceTree = "<group>"; };
-		232301201ECE74A80031EAB1 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		232301211ECE74A80031EAB1 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		232301221ECE74A80031EAB1 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
-		232301231ECE74A80031EAB1 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
-		232301241ECE74A80031EAB1 /* RESTError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTError.h; sourceTree = "<group>"; };
-		232301251ECE74A80031EAB1 /* RESTError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTError.m; sourceTree = "<group>"; };
-		232301261ECE74A80031EAB1 /* RESTfulOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTfulOperation.h; sourceTree = "<group>"; };
-		232301271ECE74A80031EAB1 /* RESTfulOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTfulOperation.m; sourceTree = "<group>"; };
-		2346FC791ECD6CF80046E13C /* SLSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLSearchViewController.h; sourceTree = "<group>"; };
-		2346FC7A1ECD6CF80046E13C /* SLSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLSearchViewController.m; sourceTree = "<group>"; };
-		2346FCF11ECD8C760046E13C /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
-		2346FCF41ECD949F0046E13C /* NSAlert+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
-		2346FCF51ECD949F0046E13C /* NSAlert+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
-		2346FCF61ECD949F0046E13C /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		2346FCF71ECD949F0046E13C /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		2346FCF81ECD949F0046E13C /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
-		2346FCF91ECD949F0046E13C /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
-		2346FCFA1ECD949F0046E13C /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
-		2346FCFB1ECD949F0046E13C /* NSDictionary+RequestEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RequestEncoding.m"; sourceTree = "<group>"; };
-		2346FCFC1ECD949F0046E13C /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
-		2346FCFD1ECD949F0046E13C /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
-		2346FCFE1ECD949F0046E13C /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
-		2346FCFF1ECD949F0046E13C /* NSString+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
-		2346FD001ECD949F0046E13C /* UIAlertView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
-		2346FD011ECD949F0046E13C /* UIAlertView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
-		2346FD021ECD949F0046E13C /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkEngine.h; sourceTree = "<group>"; };
-		2346FD031ECD949F0046E13C /* MKNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkEngine.m; sourceTree = "<group>"; };
-		2346FD041ECD949F0046E13C /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
-		2346FD051ECD949F0046E13C /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
-		2346FD061ECD949F0046E13C /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
-		2346FD081ECD949F0046E13C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		2346FD091ECD949F0046E13C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		2346FD141ECD94D50046E13C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		2346FD161ECD94E30046E13C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		2346FD181ECD94F30046E13C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		2346FD1A1ECD95080046E13C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		2346FD1D1ECD96CC0046E13C /* DesUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesUtil.h; sourceTree = "<group>"; };
-		2346FD1E1ECD96CC0046E13C /* DesUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesUtil.m; sourceTree = "<group>"; };
-		2346FD1F1ECD96CC0046E13C /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		2346FD201ECD96CC0046E13C /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
-		2346FD211ECD96CC0046E13C /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		2346FD371ECD99600046E13C /* ModelLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelLocator.h; sourceTree = "<group>"; };
-		2346FD381ECD99600046E13C /* ModelLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelLocator.m; sourceTree = "<group>"; };
-		2346FD3A1ECD99B70046E13C /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
-		2346FD3B1ECD99B70046E13C /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		569088E280B4D3668BB124DB /* libPods-traderen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-traderen.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86AC69DAE5DE4360DDB929A /* Pods-traderen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traderen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-traderen/Pods-traderen.debug.xcconfig"; sourceTree = "<group>"; };
 		DF4AA1851EB3218400C144A4 /* MailDetailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailDetailCollectionViewCell.h; sourceTree = "<group>"; };
@@ -335,10 +265,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2346FD1B1ECD95080046E13C /* CFNetwork.framework in Frameworks */,
-				2346FD191ECD94F30046E13C /* SystemConfiguration.framework in Frameworks */,
-				2346FD171ECD94E30046E13C /* ImageIO.framework in Frameworks */,
-				2346FD151ECD94D50046E13C /* Security.framework in Frameworks */,
 				A300B97907CF910FE9C20958 /* libPods-traderen.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,125 +286,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2323011E1ECE74A80031EAB1 /* RestEngine */ = {
-			isa = PBXGroup;
-			children = (
-				2323011F1ECE74A80031EAB1 /* Errors_en_US.plist */,
-				232301201ECE74A80031EAB1 /* JSONKit.h */,
-				232301211ECE74A80031EAB1 /* JSONKit.m */,
-				232301221ECE74A80031EAB1 /* JSONModel.h */,
-				232301231ECE74A80031EAB1 /* JSONModel.m */,
-				232301241ECE74A80031EAB1 /* RESTError.h */,
-				232301251ECE74A80031EAB1 /* RESTError.m */,
-				232301261ECE74A80031EAB1 /* RESTfulOperation.h */,
-				232301271ECE74A80031EAB1 /* RESTfulOperation.m */,
-			);
-			path = RestEngine;
-			sourceTree = "<group>";
-		};
-		2346FC771ECD6CA70046E13C /* 附加功能 */ = {
-			isa = PBXGroup;
-			children = (
-				2346FC781ECD6CA70046E13C /* 搜索 */,
-			);
-			path = "附加功能";
-			sourceTree = "<group>";
-		};
-		2346FC781ECD6CA70046E13C /* 搜索 */ = {
-			isa = PBXGroup;
-			children = (
-				2346FC791ECD6CF80046E13C /* SLSearchViewController.h */,
-				2346FC7A1ECD6CF80046E13C /* SLSearchViewController.m */,
-			);
-			path = "搜索";
-			sourceTree = "<group>";
-		};
-		2346FC7C1ECD88B50046E13C /* 框架 */ = {
-			isa = PBXGroup;
-			children = (
-				2323011E1ECE74A80031EAB1 /* RestEngine */,
-				2346FD1C1ECD96CC0046E13C /* DES */,
-				2346FCF21ECD949F0046E13C /* MKNetworkKit */,
-				2346FCF01ECD8C760046E13C /* Other */,
-			);
-			path = "框架";
-			sourceTree = "<group>";
-		};
-		2346FCF01ECD8C760046E13C /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				2346FCF11ECD8C760046E13C /* Define.h */,
-				2346FD3A1ECD99B70046E13C /* Base64.h */,
-				2346FD3B1ECD99B70046E13C /* Base64.m */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		2346FCF21ECD949F0046E13C /* MKNetworkKit */ = {
-			isa = PBXGroup;
-			children = (
-				2346FCF31ECD949F0046E13C /* Categories */,
-				2346FD021ECD949F0046E13C /* MKNetworkEngine.h */,
-				2346FD031ECD949F0046E13C /* MKNetworkEngine.m */,
-				2346FD041ECD949F0046E13C /* MKNetworkKit.h */,
-				2346FD051ECD949F0046E13C /* MKNetworkOperation.h */,
-				2346FD061ECD949F0046E13C /* MKNetworkOperation.m */,
-				2346FD071ECD949F0046E13C /* Reachability */,
-			);
-			path = MKNetworkKit;
-			sourceTree = "<group>";
-		};
-		2346FCF31ECD949F0046E13C /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				2346FCF41ECD949F0046E13C /* NSAlert+MKNetworkKitAdditions.h */,
-				2346FCF51ECD949F0046E13C /* NSAlert+MKNetworkKitAdditions.m */,
-				2346FCF61ECD949F0046E13C /* NSData+Base64.h */,
-				2346FCF71ECD949F0046E13C /* NSData+Base64.m */,
-				2346FCF81ECD949F0046E13C /* NSDate+RFC1123.h */,
-				2346FCF91ECD949F0046E13C /* NSDate+RFC1123.m */,
-				2346FCFA1ECD949F0046E13C /* NSDictionary+RequestEncoding.h */,
-				2346FCFB1ECD949F0046E13C /* NSDictionary+RequestEncoding.m */,
-				2346FCFC1ECD949F0046E13C /* NSString+JSON.h */,
-				2346FCFD1ECD949F0046E13C /* NSString+JSON.m */,
-				2346FCFE1ECD949F0046E13C /* NSString+MKNetworkKitAdditions.h */,
-				2346FCFF1ECD949F0046E13C /* NSString+MKNetworkKitAdditions.m */,
-				2346FD001ECD949F0046E13C /* UIAlertView+MKNetworkKitAdditions.h */,
-				2346FD011ECD949F0046E13C /* UIAlertView+MKNetworkKitAdditions.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		2346FD071ECD949F0046E13C /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				2346FD081ECD949F0046E13C /* Reachability.h */,
-				2346FD091ECD949F0046E13C /* Reachability.m */,
-			);
-			path = Reachability;
-			sourceTree = "<group>";
-		};
-		2346FD1C1ECD96CC0046E13C /* DES */ = {
-			isa = PBXGroup;
-			children = (
-				2346FD1D1ECD96CC0046E13C /* DesUtil.h */,
-				2346FD1E1ECD96CC0046E13C /* DesUtil.m */,
-				2346FD1F1ECD96CC0046E13C /* GTMBase64.h */,
-				2346FD201ECD96CC0046E13C /* GTMBase64.m */,
-				2346FD211ECD96CC0046E13C /* GTMDefines.h */,
-			);
-			path = DES;
-			sourceTree = "<group>";
-		};
-		2346FD361ECD99600046E13C /* 工具 */ = {
-			isa = PBXGroup;
-			children = (
-				2346FD371ECD99600046E13C /* ModelLocator.h */,
-				2346FD381ECD99600046E13C /* ModelLocator.m */,
-			);
-			path = "工具";
-			sourceTree = "<group>";
-		};
 		54D04251A1C1336453ACFFEE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -491,10 +298,6 @@
 		D2C0C73CF0B980884243965F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2346FD1A1ECD95080046E13C /* CFNetwork.framework */,
-				2346FD181ECD94F30046E13C /* SystemConfiguration.framework */,
-				2346FD161ECD94E30046E13C /* ImageIO.framework */,
-				2346FD141ECD94D50046E13C /* Security.framework */,
 				569088E280B4D3668BB124DB /* libPods-traderen.a */,
 			);
 			name = Frameworks;
@@ -838,8 +641,6 @@
 		DFF69AFE1E952D860009BAD7 /* traderen */ = {
 			isa = PBXGroup;
 			children = (
-				2346FD361ECD99600046E13C /* 工具 */,
-				2346FC7C1ECD88B50046E13C /* 框架 */,
 				DFF69B401E95E11A0009BAD7 /* AppDelegate */,
 				DFF69B351E9530FF0009BAD7 /* Main */,
 				DFF69B341E952F4E0009BAD7 /* NetWork */,
@@ -847,7 +648,6 @@
 				DF922DEA1E9B11410060BA4D /* Category */,
 				DFCA02B31E9B256B0073E9C9 /* Library */,
 				DFCA02E11E9E038F0073E9C9 /* Marco */,
-				2346FC771ECD6CA70046E13C /* 附加功能 */,
 				DFF69B0B1E952D860009BAD7 /* Assets.xcassets */,
 				DFF69B0D1E952D860009BAD7 /* LaunchScreen.storyboard */,
 				DFF69B101E952D860009BAD7 /* Info.plist */,
@@ -1132,7 +932,6 @@
 			files = (
 				DFF69B0F1E952D860009BAD7 /* LaunchScreen.storyboard in Resources */,
 				DFCA03141EA5BEA90073E9C9 /* Localizable.strings in Resources */,
-				232301281ECE74A80031EAB1 /* Errors_en_US.plist in Resources */,
 				DFF69B0C1E952D860009BAD7 /* Assets.xcassets in Resources */,
 				DFF69B0A1E952D860009BAD7 /* Main.storyboard in Resources */,
 			);
@@ -1211,19 +1010,14 @@
 				DF4AA1E01EC0925D00C144A4 /* UITableViewCell+JZExtension.m in Sources */,
 				DF4AA3EB1EC5A69200C144A4 /* MailDocAttachmentViewController.m in Sources */,
 				DF4AA18F1EB870EE00C144A4 /* HTTPInterface+Attachment.m in Sources */,
-				232301291ECE74A80031EAB1 /* JSONKit.m in Sources */,
 				DF4AA3D81EC2EFB900C144A4 /* MailSendViewController.m in Sources */,
-				2346FD221ECD96CC0046E13C /* DesUtil.m in Sources */,
 				DF4AA1E31EC0925D00C144A4 /* KGModal.m in Sources */,
-				2346FD0F1ECD949F0046E13C /* NSString+MKNetworkKitAdditions.m in Sources */,
 				DF4AA19D1EBAD53E00C144A4 /* MailFolderChildArrayTableViewCell.m in Sources */,
 				DFCA02CB1E9C9FD00073E9C9 /* HTTPInterface+MailBox.m in Sources */,
 				DFCA03441EAE0F910073E9C9 /* MailDetailFileModel.m in Sources */,
 				DFCA02E51E9E1B1E0073E9C9 /* UserSmartMailBoxChildListCell.m in Sources */,
 				DFF69B5D1E962F5B0009BAD7 /* CustomTabBar.m in Sources */,
 				DFCA03061EA4A2A50073E9C9 /* NSString+CreateTime.m in Sources */,
-				2346FD101ECD949F0046E13C /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
-				2323012B1ECE74A80031EAB1 /* RESTError.m in Sources */,
 				DFCD65D21E9723C40006C0D0 /* MBProgressHUD+XQ.m in Sources */,
 				DFCA02B91E9B59C70073E9C9 /* UIView+Extension.m in Sources */,
 				DFCA03481EAEEFFF0073E9C9 /* TagLabel.m in Sources */,
@@ -1237,20 +1031,14 @@
 				DF4AA3DE1EC548C500C144A4 /* MailAttachmentInfoModel.m in Sources */,
 				DFF69B511E95F11D0009BAD7 /* HTTPInterface.m in Sources */,
 				DFCA03031EA449CF0073E9C9 /* MailHomeMailListCell.m in Sources */,
-				2346FD0E1ECD949F0046E13C /* NSString+JSON.m in Sources */,
-				2346FD111ECD949F0046E13C /* MKNetworkEngine.m in Sources */,
 				DFF69B041E952D860009BAD7 /* AppDelegate.m in Sources */,
 				DFF1F3241EAF20100075EDAB /* RecipientLabelView.m in Sources */,
 				DF922DED1E9B13170060BA4D /* NSString+MD5.m in Sources */,
 				DF4AA1E61EC0925D00C144A4 /* UIViewController+RESideMenu.m in Sources */,
-				2346FD0A1ECD949F0046E13C /* NSAlert+MKNetworkKitAdditions.m in Sources */,
 				DF4AA3E81EC5A37C00C144A4 /* MailImageAttachmentViewController.m in Sources */,
-				2346FD391ECD99600046E13C /* ModelLocator.m in Sources */,
 				DF4AA1E11EC0925D00C144A4 /* UITableViewRowAction+JZExtension.m in Sources */,
-				2346FD231ECD96CC0046E13C /* GTMBase64.m in Sources */,
 				DFCA03411EADEC130073E9C9 /* MailDetailModel.m in Sources */,
 				DFCA02F91EA21B560073E9C9 /* MailTagCollectionView.m in Sources */,
-				2323012C1ECE74A80031EAB1 /* RESTfulOperation.m in Sources */,
 				DFCA02DC1E9CBFC60073E9C9 /* UserSmartMailBoxChildList.m in Sources */,
 				DFCA03001EA4493A0073E9C9 /* MailHomeMailList.m in Sources */,
 				DFCA03321EAB336F0073E9C9 /* MailFolderTableViewCell.m in Sources */,
@@ -1269,12 +1057,7 @@
 				DFCD65CE1E97189A0006C0D0 /* UserMailLabelCell.m in Sources */,
 				DFCA02F31EA1CD040073E9C9 /* MailTableViewCell.m in Sources */,
 				DF4AA19A1EB9C4A200C144A4 /* MailFolderViewController.m in Sources */,
-				2346FD3C1ECD99B70046E13C /* Base64.m in Sources */,
-				2346FC7B1ECD6CF80046E13C /* SLSearchViewController.m in Sources */,
-				2346FD0D1ECD949F0046E13C /* NSDictionary+RequestEncoding.m in Sources */,
-				2346FD0B1ECD949F0046E13C /* NSData+Base64.m in Sources */,
 				DF4AA1871EB3218400C144A4 /* MailDetailCollectionViewCell.m in Sources */,
-				2346FD121ECD949F0046E13C /* MKNetworkOperation.m in Sources */,
 				DFCA02C41E9B82CF0073E9C9 /* MailHomeViewController.m in Sources */,
 				DFCA032E1EAB2B570073E9C9 /* MailMoveFolderViewController.m in Sources */,
 				DFF69B641E9678710009BAD7 /* MenuListCell.m in Sources */,
@@ -1287,12 +1070,9 @@
 				DFF69B671E967CD40009BAD7 /* MenuList.m in Sources */,
 				DFCA03271EAA09360073E9C9 /* HTTPInterface+Folder.m in Sources */,
 				DFF69B6A1E968CFD0009BAD7 /* MenuListSubCell.m in Sources */,
-				2346FD0C1ECD949F0046E13C /* NSDate+RFC1123.m in Sources */,
-				2346FD131ECD949F0046E13C /* Reachability.m in Sources */,
 				DF4AA3DB1EC3427200C144A4 /* HTTPInterface+MailSend.m in Sources */,
 				DF4AA3E51EC55D2600C144A4 /* UIImage+ImageSize.m in Sources */,
 				DFCA02BC1E9B6E5C0073E9C9 /* MoreViewController.m in Sources */,
-				2323012A1ECE74A80031EAB1 /* JSONModel.m in Sources */,
 				DFCA02D61E9CB7F20073E9C9 /* UserMailBoxList.m in Sources */,
 				DFF69B6D1E9694DB0009BAD7 /* MenuListSecondSubCell.m in Sources */,
 			);

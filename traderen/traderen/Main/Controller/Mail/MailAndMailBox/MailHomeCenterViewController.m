@@ -23,14 +23,10 @@
 #import "MailDetailViewController.h"
 #import "MailFolderViewController.h"
 #import "MailSendViewController.h"
-#import "SLSearchViewController.h"
 
 #define pageMax 15
 
 @interface MailHomeCenterViewController ()<UITableViewDelegate, UITableViewDataSource, SelectButtonOfCellClickDelegate>
-{
-    UIView *_banchOptionView;
-}
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomViewBottomConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *littleMoreViewHeightConstraint;
 @property (weak, nonatomic) IBOutlet UIView *littleMoreView;
@@ -61,8 +57,6 @@
 @property (nonatomic, strong) UserSmartMailBoxChildListCell *mailBoxChildListCell;
 @property (nonatomic, assign) BOOL folderBackViewIsExist;
 @property (weak, nonatomic) IBOutlet UIButton *lotUpdateButton;
-
-
 @end
 
 @implementation MailHomeCenterViewController
@@ -106,14 +100,28 @@
     [HTTPInterface getUserMailListWithUserAccount:userAccount UserPassword:userMD5Password BoxID:self.boxID PageIndex:self.pageIndex PageMax:pageMax AndAct:self.act];
     [self addNotificationsOfMailHomeMailList];
     self.hud = [MBProgressHUD showIndicatorWithText:@"数据获取中" ToView:self.view];
-
+//    switch ([AFNetworkReachabilityManager sharedManager].networkReachabilityStatus) {
+//        case AFNetworkReachabilityStatusUnknown:
+//        case AFNetworkReachabilityStatusNotReachable:
+//            [MBProgressHUD showError:@"无网络" toView:self.view];
+//            [self getMailHomeMailListWithPageIndex:@(self.pageIndex)];
+//            break;
+//            
+//        default: {
+//            NSString *userAccount = [UserInfoManager sharedUserInfoManager].userAccount;
+//            NSString *userMD5Password = [UserInfoManager sharedUserInfoManager].userMD5Password;
+//            [HTTPInterface getUserMailListWithUserAccount:userAccount UserPassword:userMD5Password BoxID:self.boxID PageIndex:self.pageIndex PageMax:pageMax AndAct:self.act];
+//            [self addNotificationsOfMailHomeMailList];
+//            self.hud = [MBProgressHUD showIndicatorWithText:@"数据获取中" ToView:self.view];
+//            break;
+//        }
+//    }
     
     UIButton *leftBarButton = [UIButton buttonWithType:UIButtonTypeCustom];
     leftBarButton.frame = CGRectMake(0, 0, 25, 25);
     [leftBarButton setImage:[UIImage imageNamed:@"左导航"] forState:UIControlStateNormal];
     [leftBarButton setBackgroundColor:[UIColor clearColor]];
     [leftBarButton addTarget:self action:@selector(slidingMenuPullOutOrPullBack:) forControlEvents:UIControlEventTouchUpInside];
-    self.leftBarButton = leftBarButton;
     UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBarButton];
     
     UIButton *rightBarButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -121,7 +129,6 @@
     [rightBarButton setImage:[UIImage imageNamed:@"更多"] forState:UIControlStateNormal];
     [rightBarButton setBackgroundColor:[UIColor clearColor]];
     [rightBarButton addTarget:self action:@selector(callOutTheLittleMoreView:) forControlEvents:UIControlEventTouchUpInside];
-    self.rightBarButton = rightBarButton;
     UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBarButton];
     
     UIButton *secondRightBarButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -129,14 +136,13 @@
     [secondRightBarButton setImage:[UIImage imageNamed:@"写信"] forState:UIControlStateNormal];
     [secondRightBarButton setBackgroundColor:[UIColor clearColor]];
     [secondRightBarButton addTarget:self action:@selector(writeNewMail:) forControlEvents:UIControlEventTouchUpInside];
-    self.secondRightBarButton = secondRightBarButton;
     UIBarButtonItem *secondRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:secondRightBarButton];
     
     self.navigationItem.leftBarButtonItem = leftBarButtonItem;
     self.navigationItem.rightBarButtonItems = @[rightBarButtonItem, secondRightBarButtonItem];;
-//    self.rightBarButton = rightBarButton;
-//    self.secondRightBarButton = secondRightBarButton;
-//    self.leftBarButton = leftBarButton;
+    self.rightBarButton = rightBarButton;
+    self.secondRightBarButton = secondRightBarButton;
+    self.leftBarButton = leftBarButton;
     
 //    UIView *tapView = [[UIView alloc] initWithFrame:<#(CGRect)#>];
 }
@@ -820,12 +826,12 @@
             self.maskView.hidden = YES;
             sender.selected = !sender.selected;
             self.secondRightBarButton.userInteractionEnabled = YES;
-//            if (!self.lotUpdateButton.selected) {
-//                [[NSNotificationCenter defaultCenter] postNotificationName:@"callOutTabBar" object:nil];
-//            }
+            if (!self.lotUpdateButton.selected) {
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"callOutTabBar" object:nil];
+            }
         }];
     } else {
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"hideTabBar" object:nil userInfo:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"hideTabBar" object:nil userInfo:nil];
         self.maskView.hidden = NO;
         self.littleMoreView.hidden = NO;
         self.secondRightBarButton.userInteractionEnabled = NO;
@@ -839,25 +845,20 @@
     }
 }
 
-//批量操作完成
 - (void)completeButtonClick:(UIButton *)sender {
     self.lotUpdateButton.selected = NO;
-    //移除操作视图 恢复tablebar
-    self.tabBarController.tabBar.hidden = NO;
-    [_banchOptionView removeFromSuperview];
-
+    [self goOutTheBottomView];
     self.mailListTableView.isEditing = NO;
     [[NSNotificationCenter defaultCenter] postNotificationName:@"cellStateChange" object:nil userInfo:nil];
     self.mailListTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerViewRefresh)];
     self.mailListTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerViewRefresh)];
-
-    //修改tablebar按钮
+//    self.mm_drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+//    self.mm_drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
     self.leftBarButton.hidden = NO;
     self.navigationItem.rightBarButtonItem = nil;
     UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.rightBarButton];
     UIBarButtonItem *secondRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.secondRightBarButton];
     self.navigationItem.rightBarButtonItems= @[rightBarButtonItem, secondRightBarButtonItem];
-    
     NSMutableArray *mutableArray = [self.mailHomeMailArray mutableCopy];
     for (int i = 0; i < self.mailHomeMailArray.count; i++) {
         MailHomeMailListCell *cellModel = mutableArray[i];
@@ -866,25 +867,18 @@
             mutableArray[i] = cellModel;
         }
     }
-//    self.mailHomeMailArray = [mutableArray copy];
-//    if (self.mailFolderBackViewTopConstraint.constant == -50 && self.folderBackViewIsExist) {
-//        self.mailFolderBackView.hidden = NO;
-//        [UIView animateWithDuration:0.3 animations:^{
-//            self.mailFolderBackViewTopConstraint.constant = 0;
-//            [self.view layoutIfNeeded];
-//        } completion:^(BOOL finished) {
-//            
-//        }];
-//    }
-    
-    
-    
+    self.mailHomeMailArray = [mutableArray copy];
+    if (self.mailFolderBackViewTopConstraint.constant == -50 && self.folderBackViewIsExist) {
+        self.mailFolderBackView.hidden = NO;
+        [UIView animateWithDuration:0.3 animations:^{
+            self.mailFolderBackViewTopConstraint.constant = 0;
+            [self.view layoutIfNeeded];
+        } completion:^(BOOL finished) {
+            
+        }];
+    }
 }
 
-
-/*
- 写邮件的方法
- */
 - (void)writeNewMail:(UIButton *)sender {
     MailSendViewController *mailSendVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MailSendVC"];
     [mailSendVC recieveTheMailDetailModel:nil AndAttachmentArray:nil AndType:MailSendTypeNew AndMailBoxId:self.boxID];
@@ -1118,14 +1112,8 @@
 #pragma mark - LittleMoreViewButtonClick
 - (IBAction)lotUpdateButtonClick:(UIButton *)sender {
     sender.selected = YES;
-    //修改更多视图状态
     [self callOutTheLittleMoreView:self.rightBarButton];
-    
-    //增加操作列表,隐藏tabbar
-    self.tabBarController.tabBar.hidden =YES;
-    [self.view addSubview:[self addANewViewAboutBatchOperation]];
-    
-//    [self goOutTheBottomView];
+    [self goOutTheBottomView];
     if (self.mailFolderBackViewTopConstraint.constant == 0 && self.folderBackViewIsExist) {
         [UIView animateWithDuration:0.3 animations:^{
             self.mailFolderBackViewTopConstraint.constant = -50;
@@ -1150,11 +1138,6 @@
 }
 
 - (IBAction)searchButtonClick:(UIButton *)sender {
-    
-    //修改更多视图状态
-    [self callOutTheLittleMoreView:self.rightBarButton];
-    SLSearchViewController *search = [[SLSearchViewController alloc]init];
-    [self.navigationController pushViewController:search animated:NO];
     
 }
 
@@ -1203,6 +1186,7 @@
             NSString *userPassword = [UserInfoManager sharedUserInfoManager].userMD5Password;
             [HTTPInterface getMailDetailByMailID:cellModel.Id IndexPath:indexPath UserAccount:userAccount UserPassword:userPassword];
             [self.drawerVC.tabBarController.navigationController pushViewController:mailDetailVC animated:YES];
+//            [[NSNotificationCenter defaultCenter] postNotificationName:@"hideTabBar" object:nil];
             [tableView deselectRowAtIndexPath:indexPath animated:YES];
             break;
     }
@@ -1359,60 +1343,19 @@
         }
     }
 }
-
-
-#pragma mark 批量操作
-/*
- 1.显示操作列表于底部
- 2.
- */
-
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    MailTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    return cell.cellHeight;
+//}
 
 /*
- 增加一个uivew  包含删除  清空  移动  标记邮件
- */
-- (UIView*)addANewViewAboutBatchOperation
-{
-    _banchOptionView = [[UIView alloc]initWithFrame:CGRectMake(0,  SCREEN_HEIGHT-49-64, SCREEN_WIDTH, 49)];
-    _banchOptionView.backgroundColor = [UIColor whiteColor];
-    
-    //分隔线
-    UIView *lineView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 0.5)];
-    lineView.backgroundColor = [UIColor grayColor];
-    lineView.alpha =0.5;
-    [_banchOptionView addSubview:lineView];
-    
-    //设置左右两侧间距
-    CGFloat weith = 30;
-    //上下距离
-    CGFloat height = (49-14.3)/2;
-    CGFloat textFloat = 14;
-    CGFloat textMax = 14.3;
-    
-    //请空
-    UIButton *btnCleanAll = [[UIButton alloc]initWithFrame:CGRectMake(weith, height, 2*textMax, textMax)];
-    [btnCleanAll setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    btnCleanAll.titleLabel.font = [UIFont systemFontOfSize:textFloat];
-    [btnCleanAll setTitle:@"请空" forState:UIControlStateNormal];
-    [_banchOptionView addSubview:btnCleanAll];
-    //彻底删除
-    UIButton *btnCleanDeep = [[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/2-weith-4*textMax, height, 4*textMax, textMax)];
-    [btnCleanDeep setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    btnCleanDeep.titleLabel.font = [UIFont systemFontOfSize:textFloat];
-    [btnCleanDeep setTitle:@"彻底删除" forState:UIControlStateNormal];
-    [_banchOptionView addSubview:btnCleanDeep];
-    //移动
-    UIButton *btnRemove = [[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/2+weith, height, 4*textMax, textMax)];
-    [btnRemove setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    btnRemove.titleLabel.font = [UIFont systemFontOfSize:textFloat];
-    [btnRemove setTitle:@"移动" forState:UIControlStateNormal];
-    [_banchOptionView addSubview:btnRemove];
-    //标记邮件
-    UIButton *btnDoMark = [[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-weith-4*textMax, height, 4*textMax, textMax)];
-    [btnDoMark setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    btnDoMark.titleLabel.font = [UIFont systemFontOfSize:textFloat];
-    [btnDoMark setTitle:@"标记邮件" forState:UIControlStateNormal];
-    [_banchOptionView addSubview:btnDoMark];
-    return _banchOptionView;
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
+*/
+
 @end

@@ -104,7 +104,7 @@
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
-
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"callOutTabBar" object:nil];
 }
 
 - (void)viewDidLoad {
@@ -126,7 +126,7 @@
     [self.webBackView addSubview:webView];
     webView.navigationDelegate = self;
     self.webView = webView;
-    self.contentViewHeightConstraint.constant = SCREEN_HEIGHT - 64;
+    self.contentViewHeightConstraint.constant = SCREENH_HEIGHT - 64;
     
     self.webBackView.layer.borderWidth = 0.5;
     self.webBackView.layer.borderColor = [UIColor lightGrayColor].CGColor;
@@ -1308,8 +1308,8 @@
     [webView evaluateJavaScript:heightString completionHandler:^(id _Nullable result,NSError *_Nullable error) {
         //获取页面高度，并重置webview的frame
         CGFloat documentHeight = [result doubleValue];
-        if (documentHeight < SCREEN_HEIGHT - self.mailInfoView.height - self.attachmentBackViewConstraint.constant - 49 - 64) {
-            documentHeight = SCREEN_HEIGHT - self.mailInfoView.height - self.attachmentBackViewConstraint.constant - 49 - 64;
+        if (documentHeight < SCREENH_HEIGHT - self.mailInfoView.height - self.attachmentBackViewConstraint.constant - 49 - 64) {
+            documentHeight = SCREENH_HEIGHT - self.mailInfoView.height - self.attachmentBackViewConstraint.constant - 49 - 64;
         }
 //        CGRect frame = self.webView.frame;
 //        frame.size.height = documentHeight;
