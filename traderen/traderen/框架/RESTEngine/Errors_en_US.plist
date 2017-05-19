@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1000</key>
+	<dict>
+		<key>Option-1</key>
+		<string>OK</string>
+		<key>Suggestion</key>
+		<string>Registration Successful</string>
+		<key>Title</key>
+		<string>Registration Successful</string>
+	</dict>
+	<key>-1001</key>
+	<dict>
+		<key>Option-1</key>
+		<string>OK</string>
+		<key>Suggestion</key>
+		<string>Time out</string>
+		<key>Title</key>
+		<string>Time out</string>
+	</dict>
+</dict>
+</plist>
