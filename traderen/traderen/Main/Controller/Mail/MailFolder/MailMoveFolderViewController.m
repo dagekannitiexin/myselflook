@@ -64,13 +64,13 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"hideTabBar" object:nil];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"hideTabBar" object:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 //    [self.navigationController setNavigationBarHidden:YES];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"callOutTabBar" object:nil];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"callOutTabBar" object:nil];
 }
 
 #pragma mark - RightBarButtonItemClick
